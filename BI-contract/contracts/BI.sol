@@ -141,7 +141,7 @@ contract BI
         boughtProduct memory bp;
         // bp.unitsBought = count;
         bp.boughtby = msg.sender;
-        bp.review = "TO BE FILLED LATER";
+        bp.review = "Great Product";
         
         transferredProducts.push(bp);
         

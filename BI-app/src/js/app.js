@@ -1,4 +1,5 @@
 let x = []
+
 App = {
   web3: null,
   contracts: {},
@@ -230,8 +231,16 @@ App = {
 		console.log(x);
 		for (var i = 0; i < result.length; i++) {
 			
-			jQuery('#getproducts').append("<i > Present Products : </i> " , result[i].toString() + "<br></br>");
+			jQuery('#getproducts').append("<i > Present Products : </i> " , "<br></br>");
+			jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
 			jQuery('#getproducts').append("<br></br>")
+			jQuery('#getproducts').append("Product owners ", result[i].owners.toString())
+			jQuery('#getproducts').append("<br></br>")
+			jQuery('#getproducts').append("Description of Product: ", result[i].description.toString())
+			jQuery('#getproducts').append("<br></br>")
+			jQuery('#getproducts').append("price of Product: ", result[i].price.toString())
+			jQuery('#getproducts').append("<br></br>")
+
 		}
 		
 	})
@@ -267,7 +276,11 @@ App = {
 		console.log(x);
 		for (var i = 0; i < result.length; i++) {
 			
-			jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " , result[i].toString() + "<br></br>");
+			jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " , "<br></br>");
+			jQuery('#gettransferredproducts').append("<i > Products bought by  : </i> " , result[i].boughtby.toString(),"<br></br>");
+			jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " , result[i].review.toString(),"<br></br>");
+			// jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " , "<br></br>");
+
 			jQuery('#gettransferredproducts').append("<br></br>")
 		}
 		
