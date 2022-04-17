@@ -1,0 +1,198 @@
+<html>
+    <!-- <script src="web3.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@truffle/contract@4.3.5/dist/truffle-contract.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script  src="js/toastr.min.js"></script> -->
+    <script src="js/app.js"></script>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      input{
+        width: 500px;
+      }
+      .header{
+        height: 120px;
+        color: white;
+        background-color: #7952b3;
+        padding: 20px;
+      }
+      .heading{
+        color:#7952b3 !important;
+      }
+      .button-test{
+        background-color: #7952b3 !important;
+        color: white !important;
+      }
+    </style>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand heading"  href="#">Buffalo Instruments</a>
+    </div>
+  </nav>
+    <div>
+
+    
+    <!-- <input id = "addItems">
+    <button id="sellrequest">Sell Items</button> -->
+    <!-- <br></br>
+    <button id="buyrequest">Buy Items</button>
+    <br></br> -->
+    <div class="header">
+      <h1 class="text-center">Registration</h1>
+    </div>
+    <div class="panel-body">
+
+      
+      <hr>
+      <div class="row" style="margin:5vw">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <button id="registerbuy" class="btn btn-primary button-test" type="button">Register as Buyer</button>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <button id="registersell" class="btn btn-primary button-test" type="button">Register as Seller</button>
+          
+        </div>
+        
+      </div>
+      <div class="row" style="margin:5vw">
+        <p id="register_success"></p>
+      </div>
+<hr>        
+      <!-- <div class="col-xs-2 col-sm-8 col-sm-push-2">
+        <h1 class="text-center">Buy Items</h1>
+        <hr/>
+        <button id="buyerbalance" class="btn btn-success" type="button">Get Buyer Balance</button>
+        <p id="getbuyerbalance"></p>
+  
+        <button id="products" class="btn btn-success" type="button">See Productinfo</button>
+        <div id="getproducts"></div>
+        <br>
+        <button id="totalItems" class="btn btn-success" type="button">Total present items</button>
+        <div id="gettotalItems"></div>
+        <br>
+
+        <input type="text" name="buyadress" id="buyadress" placeholder="Enter the address of the seller">
+        <br></br>
+        <input type="text" name="pid" id="pid" placeholder="Enter the id of the product">
+        <br></br>
+        
+        <button id="buyrequest" class="btn btn-success" type="button">Buy</button>
+        <p id="successfullbuy"></p>
+      </div> -->
+      <div class="row">
+        
+        <div class = "col-md-4">
+          <div class = "card" style="margin:5vw">
+          <button id="buyerbalance" class="btn btn-primary button-test" type="button">Get Buyer Balance</button>
+        <p id="getbuyerbalance"></p>
+  
+        <button id="products" class="btn btn-primary button-test" type="button">See Productinfo</button>
+        <div id="getproducts"></div>
+        <br>
+        <button id="totalItems" class="btn btn-primary button-test" type="button">Total present items</button>
+        <div id="gettotalItems"></div>
+        <br>
+        <button id="transferredproducts" class="btn btn-primary button-test" type="button">Transferred Products</button>
+        <div id="gettransferredproducts"></div>
+        </div>
+      </div>
+        <div class="col-md-8">
+          <div class="card" style = margin-left:10vw;margin-right:10vw>
+            <div class="card-header">
+              <h1 class="card-header">Buy Items</h1>
+            </div>
+            
+            <div class="card-body">
+              <form class="row g-3 needs-validation" novalidate>
+              <div class="form-group">
+                <label for="buyadress" class="form-label">Enter Address of the Seller</label>
+                <input type="text" name="buyadress" id="buyadress" class="form-control"  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>          
+              </div>
+              <div class="form-group">
+                <label for="pid" class="form-label">Enter ID of the Product</label>
+                <input type="text" name="pid" id="pid" class="form-control" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>          
+              </div>
+              <button id="buyrequest" class="btn btn-primary button-test" type="button">Buy</button>
+              <p id="successfullbuy"></p>
+            </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <br></br>
+      <div class="card">
+        <hr/>
+        <!-- <input type="text" name="name" id="ID" placeholder="Enter ID of the Item"/>
+        <br></br>
+        <input type="text" name="name" id="owner" placeholder="Enter address of the owner"/>
+        <br></br>
+        <input type="text" name="name" id="cost" placeholder="Enter cost of the Item"/>
+        <br></br>
+        <input type="text" name="name" id="desc" placeholder="Enter desc of the Item"/>
+        <br></br>
+        <button id="sellrequest" class="btn btn-success" type="button">Sell</button> -->
+      </div>
+      <div class="card" style = margin-left:10vw;margin-right:10vw>
+        <div class="card-header">
+          <h1 class="card-header">Sell Items</h1>
+        </div>
+        
+        <div class="card-body">
+          <form class="row g-3 needs-validation" novalidate>
+          <div class="form-group">
+            <label for="ID" class="form-label">Enter ID of the Product</label>
+            <input type="text" class="form-control" id="ID" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>          
+          </div>
+          <div class="form-group">
+            <label for="owner" class="form-label">Enter owner's address</label>
+            <input type="text" class="form-control" id="owner" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div> 
+          </div>
+          <div class="form-group">
+            <label for="cost" class="form-label">Enter cost of the Product</label>
+            <input type="text" class="form-control" id="cost" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div> 
+          </div>
+          <div class="form-group">
+            <label for="desc" class="form-label">Enter description of the Product</label>
+            <input type="text" class="form-control" id="desc" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div> 
+          </div>
+          <button id="sellrequest" class="btn btn-primary button-test" type="button">Sell</button>
+        </form>
+        </div>
+      </div>
+   </div>
+</body>
+
+</html>
