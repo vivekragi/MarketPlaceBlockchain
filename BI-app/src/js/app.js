@@ -1,5 +1,5 @@
 let x = []
-
+let image = localStorage.getItem("image") ? JSON.parse(localStorage.getItem("image")) : {}
 App = {
   web3: null,
   contracts: {},
@@ -228,9 +228,10 @@ App = {
 
 	return registerInstance.seeProductsInfo({from: account}).then((result)=>{
 		x = result;
-		console.log(x);
-		for (var i = 0; i < result.length; i++) {
-			
+		console.log(x, result.length);
+		result.forEach((ele, i)=>{
+			console.log("hi-ds")
+
 			jQuery('#getproducts').append("<i > Present Products : </i> " , "<br></br>");
 			jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
 			jQuery('#getproducts').append("<br></br>")
@@ -240,8 +241,18 @@ App = {
 			jQuery('#getproducts').append("<br></br>")
 			jQuery('#getproducts').append("price of Product: ", result[i].price.toString())
 			jQuery('#getproducts').append("<br></br>")
-
-		}
+			console.log(image)
+			if(parseInt(result[i].prodID, 10) in image){
+				const data = document.createElement('img')
+				console.log("hi")
+				console.log(image, result[i].prodID)
+				data.src = image[parseInt(result[i].prodID, 10)];
+				data.width = "400"
+				data.height = "400"
+				console.log(data)
+				jQuery("#getproducts").append(data)	
+			}
+		})
 		
 	})
 
@@ -374,12 +385,15 @@ var registerInstance;
   
   },
   handlesell:function(id, owner, cost, desc){
+	  var x = document.getElementById("url").value;
+	  image[id] = x;
+	  localStorage.setItem("image", JSON.stringify(image))
 	  var registerInstance;
 	  web3.eth.getAccounts(function(error, accounts) {
 	  var account = accounts[0];
 	  App.contracts.BI.deployed().then(function(instance) {
 	  registerInstance = instance;
-
+			
 	  return registerInstance.fillProductInfo(id, owner, cost, desc, {from: account}).then((result)=>{
 		if(result){
             if(result.receipt.status == true){
