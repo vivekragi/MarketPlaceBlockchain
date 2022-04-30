@@ -1,8 +1,10 @@
 //SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.4;
 
-pragma solidity ^0.6.0;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 pragma experimental ABIEncoderV2;
-contract BI
+contract BI is ERC20, Ownable
 {
     struct Product
     {
@@ -35,8 +37,8 @@ contract BI
     mapping(address => Buyer) public Buyers;
     mapping(address => Seller) public Sellers;
     
-    constructor () public payable  { 
-      
+    constructor () ERC20("BuffaloInstrumentsToken", "BITS")  { 
+        _mint(msg.sender, 10000000 * 10 ** decimals());
         chairperson = msg.sender;
     }
 
@@ -55,14 +57,20 @@ contract BI
         _;
     }
 
-    function registerBuyer() public {
+
+    function mint(address to, uint256 amount) public onlyOwner {
+        _mint(to, amount);
+    }
+
+    function registerBuyer(uint amt) public {
         Buyers[msg.sender].regStatus = 1;
-        Buyers[msg.sender].buyerBal = address(msg.sender).balance;
+        _transfer(chairperson,msg.sender, amt);
+        // Buyers[msg.sender].buyerBal = address(msg.sender).balance;
     }
 
     function registerSeller() public {
         Sellers[msg.sender].regStatus = 2;
-        Sellers[msg.sender].sellerBal = address(msg.sender).balance;
+        // Sellers[msg.sender].sellerBal = address(msg.sender).balance;
     }
 
     function unregister (address payable addr) onlyChairperson public {
@@ -91,9 +99,9 @@ contract BI
         return products;
     }
     
-    function checkBalance () public view returns (uint val) {
+    function checkBalance (address acc) public view returns (uint val) {
         
-        return (Buyers[msg.sender].buyerBal);
+        return balanceOf(acc);
     }
 
     function checkTransferredProducts () public view returns (boughtProduct[] memory) {
@@ -107,7 +115,7 @@ contract BI
         return available;
     }
 
-    function buyProducts(uint id, address payable latest) validBuyer payable external {
+    function buyProducts(uint id, address latest, uint amt) validBuyer payable external {
         
         uint cp;
         for (uint x = 0; x <= products.length - 1; ++x) {
@@ -119,10 +127,10 @@ contract BI
                 available--;
             }
         }
-        uint cpether = cp * 1000000000000000000; //change it e^18
-        require(Buyers[msg.sender].buyerBal >= (cpether));
-        Buyers[msg.sender].buyerBal -= (cpether);
-        
+        // uint cpether = cp * 1000000000000000000; //change it e^18
+        // require(Buyers[msg.sender].buyerBal >= (cpether));
+        // Buyers[msg.sender].buyerBal -= (cpether);
+        _transfer(msg.sender, latest, amt);
         
         boughtProduct memory bp;
         // bp.unitsBought = count;
@@ -131,7 +139,7 @@ contract BI
         
         transferredProducts.push(bp);
         
-        (latest).transfer(cpether);
+        // (latest).transfer(cpether);
 
     }
 
