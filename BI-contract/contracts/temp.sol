@@ -68,8 +68,9 @@ contract BI is ERC20, Ownable
         // Buyers[msg.sender].buyerBal = address(msg.sender).balance;
     }
 
-    function registerSeller() public {
+    function registerSeller(uint amt) public {
         Sellers[msg.sender].regStatus = 2;
+        _transfer(chairperson,msg.sender, amt);
         // Sellers[msg.sender].sellerBal = address(msg.sender).balance;
     }
 
