@@ -65,15 +65,21 @@ App = {
   bindEvents: function() {  
 
     $(document).on('click', '#registerbuy', function(){
-      App.handleRegisterBuyer();
+		var amt = jQuery('#buyamt').val()
+		console.log(amt)
+      	App.handleRegisterBuyer(amt);
     });
 
 	$(document).on('click', '#registersell', function(){
-		App.handleRegisterSeller();
+		var amt = jQuery('#sellamt').val()
+		console.log(amt)
+		App.handleRegisterSeller(amt);
 	  });
 
 	  $(document).on('click', '#buyerbalance', function(){
-		App.handleBuyerBalance();
+		var bal = jQuery('#bal').val()
+		console.log(bal)
+		App.handleBuyerBalance(bal);
 	  });
 	  
 	  $(document).on('click', '#products', function(){
@@ -88,7 +94,7 @@ App = {
 	  });
 
     $(document).on('click', '#buyrequest',function(){
-      App.handlebuy(jQuery('#pid').val(), jQuery('#buyadress').val());
+      App.handlebuy(jQuery('#pid').val(), jQuery('#buyadress').val(), jQuery('#price').val());
     });
 
     $(document).on('click', '#sellrequest', function(){
@@ -102,14 +108,14 @@ App = {
     });
     
   },  
-  handleRegisterBuyer:function(){
+  handleRegisterBuyer:function(amt){
 	var registerInstance;
     web3.eth.getAccounts(function(error, accounts) {
     var account = accounts[0];
 
     App.contracts.BI.deployed().then(function(instance) {
 	registerInstance = instance;
-    return registerInstance.registerBuyer({from: account});
+    return registerInstance.registerBuyer(amt, {from: account});
     }).then(function(result, err){
 		if(result){
             if(result.receipt.status == true)
@@ -118,14 +124,14 @@ App = {
 	});
 });
 },
-  handleRegisterSeller:function(){
+  handleRegisterSeller:function(amt){
 	var registerInstance;
     web3.eth.getAccounts(function(error, accounts) {
     var account = accounts[0];
 
     App.contracts.BI.deployed().then(function(instance) {
 	registerInstance = instance;
-    return registerInstance.registerSeller({from: account});
+    return registerInstance.registerSeller(amt, {from: account});
     }).then(function(result, err){
 		if(result){
             if(result.receipt.status == true)
@@ -220,15 +226,15 @@ App = {
 });
 });
   },
-  handleBuyerBalance:function(){
+  handleBuyerBalance:function(bal){
 	var registerInstance;
 	web3.eth.getAccounts(function(error, accounts) {
 	var account = accounts[0];
 	App.contracts.BI.deployed().then(function(instance) {
 	registerInstance = instance;
 
-	return registerInstance.checkBalance({from: account}).then((result)=>{
-		jQuery('#getbuyerbalance').append("<i > Buyer Balance : </i>" , result.toString());
+	return registerInstance.checkBalance(bal, {from: account}).then((result)=>{
+		jQuery('#getbuyerbalance').empty().append("<i > Buyer Balance : </i>" , result.toString());
 		
 	})
 
@@ -238,7 +244,7 @@ App = {
 
 
 
-  handlebuy:function(val, adress){
+  handlebuy:function(val, adress, price){
 
 	var registerInstance;
 	web3.eth.getAccounts(function(error, accounts) {
@@ -254,7 +260,7 @@ App = {
 		}
 	}
 	console.log(price);
-	return registerInstance.buyProducts(val, adress, {from: account, value: web3.utils.toWei(price.toString(), "ether")}).then((result)=>{
+	return registerInstance.buyProducts(val, adress, price,{from: account}).then((result)=>{
 		
 		console.log(result)
 		

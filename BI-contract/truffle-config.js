@@ -1,3 +1,7 @@
+// var HDWalletProvider = require("truffle-hdwallet-provider");
+// const MNEMONIC = 'fetch sibling art coral birth change three accident slogan special act town';
+
+
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
@@ -5,13 +9,17 @@ module.exports = {
     development: {
       host: "localhost",
       port: 7545,
-      network_id: "5777",
+      network_id: "*",
       gas: 4600000
     }
+    // ropsten: {
+    //   provider: function() {
+    //     return new HDWalletProvider(MNEMONIC, "https://ropsten.infura.io/YOUR_API_KEY")
+    //   },
   },
   compilers: {
     solc: {
-      version: "0.6.12",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.7",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
