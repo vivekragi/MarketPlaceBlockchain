@@ -15,7 +15,7 @@ contract BI is ERC20, Ownable
     }
 
     struct boughtProduct {
-        address boughtby;
+        address boughtBy;
         string review;
     }
     
@@ -38,7 +38,7 @@ contract BI is ERC20, Ownable
     mapping(address => Seller) public Sellers;
     
     constructor () ERC20("BuffaloInstrumentsToken", "BITS")  { 
-        _mint(msg.sender, 10000000 * 10 ** decimals());
+        _mint(msg.sender, 1000000 * 10 ** decimals());
         chairperson = msg.sender;
     }
 
@@ -135,7 +135,7 @@ contract BI is ERC20, Ownable
         
         boughtProduct memory bp;
         // bp.unitsBought = count;
-        bp.boughtby = msg.sender;
+        bp.boughtBy = msg.sender;
         bp.review = "Great Product";
         
         transferredProducts.push(bp);

@@ -1,9 +1,9 @@
 {
   "contractName": "LibOptimism",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Primitives for cross-chain aware contracts for https://www.optimism.io/[Optimism]. See the https://community.optimism.io/docs/developers/bridge/messaging/#accessing-msg-sender[documentation] for the functionality used here.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/crosschain/optimism/LibOptimism.sol\":\"LibOptimism\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/crosschain/errors.sol\":{\"keccak256\":\"0xa1e9b651a2427925598b49ef35da5930abc07859cfac5b9dfb1912f063a024b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c514518c36a3fb1c5f1a99d88857e93160c72ea1fd728c443406ad1acb43ae9a\",\"dweb:/ipfs/Qmc3oXjBNhdeM5cfWpsvewXZAhH34Scgna2W3MvLaiiapQ\"]},\"project:/contracts/crosschain/optimism/LibOptimism.sol\":{\"keccak256\":\"0xc0c6285aa544848d3b5d54a7d3280c768381d13e33d7f21f6d3076d9ed078172\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dd28ed4989291775930bec3825d23ca7ebce137d489f17cdc19f6bb1fa74360b\",\"dweb:/ipfs/QmQus4r4hc9SeTuNqtvvhK8bz8CmbFJG3zbwTwqmux3cRC\"]},\"project:/contracts/vendor/optimism/ICrossDomainMessenger.sol\":{\"keccak256\":\"0x7e55d25ce89596017f1300edc0fed07bd22db98d3b67349cac9d293340d1ac4e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4e432f1564db9e95496b6981156dbcd280e41cc5de870e8a6f99cf5f84bab429\",\"dweb:/ipfs/QmRjgeg9VZdm88QX3MFLjuVbS66eKvk3LjV1yYkW68Q5Jq\"]}},\"version\":1}",
-  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220af556ca9eed16bb1bd885e8b7ae62640b80f0ea28d94bed8648f44936f54039664736f6c63430008070033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220af556ca9eed16bb1bd885e8b7ae62640b80f0ea28d94bed8648f44936f54039664736f6c63430008070033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Primitives for cross-chain aware contracts for https://www.optimism.io/[Optimism]. See the https://community.optimism.io/docs/developers/bridge/messaging/#accessing-msg-sender[documentation] for the functionality used here.\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/crosschain/optimism/LibOptimism.sol\":\"LibOptimism\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/crosschain/errors.sol\":{\"keccak256\":\"0xa1e9b651a2427925598b49ef35da5930abc07859cfac5b9dfb1912f063a024b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c514518c36a3fb1c5f1a99d88857e93160c72ea1fd728c443406ad1acb43ae9a\",\"dweb:/ipfs/Qmc3oXjBNhdeM5cfWpsvewXZAhH34Scgna2W3MvLaiiapQ\"]},\"project:/contracts/crosschain/optimism/LibOptimism.sol\":{\"keccak256\":\"0xc0c6285aa544848d3b5d54a7d3280c768381d13e33d7f21f6d3076d9ed078172\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dd28ed4989291775930bec3825d23ca7ebce137d489f17cdc19f6bb1fa74360b\",\"dweb:/ipfs/QmQus4r4hc9SeTuNqtvvhK8bz8CmbFJG3zbwTwqmux3cRC\"]},\"project:/contracts/vendor/optimism/ICrossDomainMessenger.sol\":{\"keccak256\":\"0x7e55d25ce89596017f1300edc0fed07bd22db98d3b67349cac9d293340d1ac4e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4e432f1564db9e95496b6981156dbcd280e41cc5de870e8a6f99cf5f84bab429\",\"dweb:/ipfs/QmRjgeg9VZdm88QX3MFLjuVbS66eKvk3LjV1yYkW68Q5Jq\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202db6ab9fe6e65aaaa28deb21a4e85d21cdab741df37fec4b144e13549be1fe5164736f6c63430008090033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202db6ab9fe6e65aaaa28deb21a4e85d21cdab741df37fec4b144e13549be1fe5164736f6c63430008090033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
@@ -82,6 +82,7 @@
       {
         "abstract": false,
         "baseContracts": [],
+        "canonicalName": "LibOptimism",
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
@@ -554,11 +555,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-07T15:24:02.327Z",
+  "updatedAt": "2022-05-07T20:57:27.736Z",
   "devdoc": {
     "details": "Primitives for cross-chain aware contracts for https://www.optimism.io/[Optimism]. See the https://community.optimism.io/docs/developers/bridge/messaging/#accessing-msg-sender[documentation] for the functionality used here.",
     "kind": "dev",
