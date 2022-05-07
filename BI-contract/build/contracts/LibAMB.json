@@ -558,7 +558,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-06T17:01:43.090Z",
+  "updatedAt": "2022-05-07T15:24:02.320Z",
   "devdoc": {
     "details": "Primitives for cross-chain aware contracts using the https://docs.tokenbridge.net/amb-bridge/about-amb-bridge[AMB] family of bridges.",
     "kind": "dev",

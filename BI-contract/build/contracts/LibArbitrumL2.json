@@ -1061,7 +1061,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-06T17:01:43.095Z",
+  "updatedAt": "2022-05-07T15:24:02.324Z",
   "devdoc": {
     "details": "Primitives for cross-chain aware contracts for https://arbitrum.io/[Arbitrum]. This version should only be used on L2 to process cross-chain messages originating from L1. For the other side, use {LibArbitrumL1}.",
     "kind": "dev",
