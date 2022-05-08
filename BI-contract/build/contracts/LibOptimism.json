@@ -15,24 +15,24 @@
     "absolutePath": "project:/contracts/crosschain/optimism/LibOptimism.sol",
     "exportedSymbols": {
       "InvalidCrossChainSender": [
-        1317
+        1316
       ],
       "LibOptimism": [
-        1411
+        1410
       ],
       "NotCrossChainCall": [
-        1311
+        1310
       ],
       "Optimism_Bridge": [
-        4260
+        4259
       ]
     },
-    "id": 1412,
+    "id": 1411,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1369,
+        "id": 1368,
         "literals": [
           "solidity",
           "^",
@@ -45,16 +45,16 @@
       {
         "absolutePath": "project:/contracts/vendor/optimism/ICrossDomainMessenger.sol",
         "file": "../../vendor/optimism/ICrossDomainMessenger.sol",
-        "id": 1371,
+        "id": 1370,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1412,
-        "sourceUnit": 4261,
+        "scope": 1411,
+        "sourceUnit": 4260,
         "src": "144:105:14",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 1370,
+              "id": 1369,
               "name": "ICrossDomainMessenger",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -70,11 +70,11 @@
       {
         "absolutePath": "project:/contracts/crosschain/errors.sol",
         "file": "../errors.sol",
-        "id": 1372,
+        "id": 1371,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1412,
-        "sourceUnit": 1318,
+        "scope": 1411,
+        "sourceUnit": 1317,
         "src": "250:23:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -85,15 +85,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 1373,
+          "id": 1372,
           "nodeType": "StructuredDocumentation",
           "src": "275:245:14",
           "text": " @dev Primitives for cross-chain aware contracts for https://www.optimism.io/[Optimism].\n See the https://community.optimism.io/docs/developers/bridge/messaging/#accessing-msg-sender[documentation]\n for the functionality used here."
         },
         "fullyImplemented": true,
-        "id": 1411,
+        "id": 1410,
         "linearizedBaseContracts": [
-          1411
+          1410
         ],
         "name": "LibOptimism",
         "nameLocation": "529:11:14",
@@ -101,7 +101,7 @@
         "nodes": [
           {
             "body": {
-              "id": 1386,
+              "id": 1385,
               "nodeType": "Block",
               "src": "757:47:14",
               "statements": [
@@ -111,14 +111,14 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 1384,
+                    "id": 1383,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "expression": {
-                        "id": 1381,
+                        "id": 1380,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -129,7 +129,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 1382,
+                      "id": 1381,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -145,11 +145,11 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 1383,
+                      "id": 1382,
                       "name": "messenger",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1376,
+                      "referencedDeclaration": 1375,
                       "src": "788:9:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -162,20 +162,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1380,
-                  "id": 1385,
+                  "functionReturnParameters": 1379,
+                  "id": 1384,
                   "nodeType": "Return",
                   "src": "767:30:14"
                 }
               ]
             },
             "documentation": {
-              "id": 1374,
+              "id": 1373,
               "nodeType": "StructuredDocumentation",
               "src": "547:135:14",
               "text": " @dev Returns whether the current function call is the result of a\n cross-chain message relayed by `messenger`."
             },
-            "id": 1387,
+            "id": 1386,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -183,17 +183,17 @@
             "nameLocation": "696:12:14",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1377,
+              "id": 1376,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1376,
+                  "id": 1375,
                   "mutability": "mutable",
                   "name": "messenger",
                   "nameLocation": "717:9:14",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1387,
+                  "scope": 1386,
                   "src": "709:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -202,7 +202,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1375,
+                    "id": 1374,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "709:7:14",
@@ -218,17 +218,17 @@
               "src": "708:19:14"
             },
             "returnParameters": {
-              "id": 1380,
+              "id": 1379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1379,
+                  "id": 1378,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1387,
+                  "scope": 1386,
                   "src": "751:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -237,7 +237,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1378,
+                    "id": 1377,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "751:4:14",
@@ -251,7 +251,7 @@
               ],
               "src": "750:6:14"
             },
-            "scope": 1411,
+            "scope": 1410,
             "src": "687:117:14",
             "stateMutability": "view",
             "virtual": false,
@@ -259,13 +259,13 @@
           },
           {
             "body": {
-              "id": 1409,
+              "id": 1408,
               "nodeType": "Block",
               "src": "1244:140:14",
               "statements": [
                 {
                   "condition": {
-                    "id": 1398,
+                    "id": 1397,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -277,11 +277,11 @@
                     "subExpression": {
                       "arguments": [
                         {
-                          "id": 1396,
+                          "id": 1395,
                           "name": "messenger",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1390,
+                          "referencedDeclaration": 1389,
                           "src": "1272:9:14",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -296,18 +296,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1395,
+                        "id": 1394,
                         "name": "isCrossChain",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1387,
+                        "referencedDeclaration": 1386,
                         "src": "1259:12:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                           "typeString": "function (address) view returns (bool)"
                         }
                       },
-                      "id": 1397,
+                      "id": 1396,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -327,7 +327,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1402,
+                  "id": 1401,
                   "nodeType": "IfStatement",
                   "src": "1254:56:14",
                   "trueBody": {
@@ -335,18 +335,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 1399,
+                        "id": 1398,
                         "name": "NotCrossChainCall",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1311,
+                        "referencedDeclaration": 1310,
                         "src": "1291:17:14",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_error_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 1400,
+                      "id": 1399,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -361,7 +361,7 @@
                         "typeString": "tuple()"
                       }
                     },
-                    "id": 1401,
+                    "id": 1400,
                     "nodeType": "RevertStatement",
                     "src": "1284:26:14"
                   }
@@ -374,11 +374,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1404,
+                            "id": 1403,
                             "name": "messenger",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1390,
+                            "referencedDeclaration": 1389,
                             "src": "1344:9:14",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -393,18 +393,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1403,
+                          "id": 1402,
                           "name": "Optimism_Bridge",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 4260,
+                          "referencedDeclaration": 4259,
                           "src": "1328:15:14",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_ICrossDomainMessenger_$4260_$",
+                            "typeIdentifier": "t_type$_t_contract$_ICrossDomainMessenger_$4259_$",
                             "typeString": "type(contract ICrossDomainMessenger)"
                           }
                         },
-                        "id": 1405,
+                        "id": 1404,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -415,25 +415,25 @@
                         "src": "1328:26:14",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ICrossDomainMessenger_$4260",
+                          "typeIdentifier": "t_contract$_ICrossDomainMessenger_$4259",
                           "typeString": "contract ICrossDomainMessenger"
                         }
                       },
-                      "id": 1406,
+                      "id": 1405,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "xDomainMessageSender",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 4249,
+                      "referencedDeclaration": 4248,
                       "src": "1328:47:14",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
                         "typeString": "function () view external returns (address)"
                       }
                     },
-                    "id": 1407,
+                    "id": 1406,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -448,20 +448,20 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 1394,
-                  "id": 1408,
+                  "functionReturnParameters": 1393,
+                  "id": 1407,
                   "nodeType": "Return",
                   "src": "1321:56:14"
                 }
               ]
             },
             "documentation": {
-              "id": 1388,
+              "id": 1387,
               "nodeType": "StructuredDocumentation",
               "src": "810:352:14",
               "text": " @dev Returns the address of the sender that triggered the current\n cross-chain message through `messenger`.\n NOTE: {isCrossChain} should be checked before trying to recover the\n sender, as it will revert with `NotCrossChainCall` if the current\n function call is not the result of a cross-chain message."
             },
-            "id": 1410,
+            "id": 1409,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -469,17 +469,17 @@
             "nameLocation": "1176:16:14",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1391,
+              "id": 1390,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1390,
+                  "id": 1389,
                   "mutability": "mutable",
                   "name": "messenger",
                   "nameLocation": "1201:9:14",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1410,
+                  "scope": 1409,
                   "src": "1193:17:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -488,7 +488,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1389,
+                    "id": 1388,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1193:7:14",
@@ -504,17 +504,17 @@
               "src": "1192:19:14"
             },
             "returnParameters": {
-              "id": 1394,
+              "id": 1393,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1393,
+                  "id": 1392,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1410,
+                  "scope": 1409,
                   "src": "1235:7:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -523,7 +523,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1392,
+                    "id": 1391,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1235:7:14",
@@ -538,14 +538,14 @@
               ],
               "src": "1234:9:14"
             },
-            "scope": 1411,
+            "scope": 1410,
             "src": "1167:217:14",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 1412,
+        "scope": 1411,
         "src": "521:865:14",
         "usedErrors": []
       }
@@ -558,7 +558,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-07T21:37:20.050Z",
+  "updatedAt": "2022-05-08T16:32:14.151Z",
   "devdoc": {
     "details": "Primitives for cross-chain aware contracts for https://www.optimism.io/[Optimism]. See the https://community.optimism.io/docs/developers/bridge/messaging/#accessing-msg-sender[documentation] for the functionality used here.",
     "kind": "dev",

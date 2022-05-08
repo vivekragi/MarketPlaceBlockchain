@@ -72,7 +72,7 @@ App = {
 
 	$(document).on('click', '#registersell', function(){
 		var amt = jQuery('#sellamt').val()
-		console.log(amt)
+		// console.log(amt)
 		App.handleRegisterSeller(amt);
 	  });
 
@@ -89,7 +89,7 @@ App = {
 	  $(document).on('click', '#totalItems', function(){
 		App.handleTotalItems();
 	  });
-	  $(document).on('click', '#totalItems', function(){
+	  $(document).on('click', '#transferredproducts', function(){
 		App.handleTransferredProducts();
 	  });
 
@@ -133,6 +133,7 @@ App = {
 	registerInstance = instance;
     return registerInstance.registerSeller(amt, {from: account});
     }).then(function(result, err){
+		console.log(result)
 		if(result){
             if(result.receipt.status == true)
             jQuery('#register_success').text("Hello, you are registered Successfully, your adrress is : " + account)
@@ -169,29 +170,39 @@ App = {
 	return registerInstance.seeProductsInfo({from: account}).then((result)=>{
 		x = result;
 		console.log(x, result.length);
+		jQuery('#getproducts').empty();
 		result.forEach((ele, i)=>{
-			console.log("hi-ds")
+			
+			if (result[i]['sold'] != 1) {
+				
+				console.log("hi-ds")
+				jQuery('#getproducts').append("<br></br> <i > Present Products : </i>  <br></br> Product Id: " 
+				+ result[i]['prodID'].toString() + "<br></br> Product owners " +  result[i]['owner'].toString() 
+				+ "<br></br> Description of Product: " +  result[i]['description'].toString()  + "<br></br> price of Product: " +  result[i]['price'].toString() + "<br></br>"
+				);
 
-			jQuery('#getproducts').append("<i > Present Products : </i> " , "<br></br>");
-			jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
-			jQuery('#getproducts').append("<br></br>")
-			jQuery('#getproducts').append("Product owners ", result[i].owners.toString())
-			jQuery('#getproducts').append("<br></br>")
-			jQuery('#getproducts').append("Description of Product: ", result[i].description.toString())
-			jQuery('#getproducts').append("<br></br>")
-			jQuery('#getproducts').append("price of Product: ", result[i].price.toString())
-			jQuery('#getproducts').append("<br></br>")
-			console.log(image)
-			if(parseInt(result[i].prodID, 10) in image){
-				const data = document.createElement('img')
-				console.log("hi")
-				console.log(image, result[i].prodID)
-				data.src = image[parseInt(result[i].prodID, 10)];
-				data.width = "400"
-				data.height = "400"
-				console.log(data)
-				jQuery("#getproducts").append(data)	
-			}
+				console.log(image)
+				if(parseInt(result[i].prodID, 10) in image){
+					const data = document.createElement('img')
+					console.log("hi")
+					console.log(image, result[i].prodID)
+					data.src = image[parseInt(result[i].prodID, 10)];
+					data.width = "400"
+					data.height = "400"
+					console.log(data)
+					jQuery("#getproducts").append(data)	
+				}
+			} 
+			
+			// jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
+			// jQuery('#getproducts').append("<br></br>")
+			// jQuery('#getproducts').append("Product owners ", result[i].owners.toString())
+			// jQuery('#getproducts').append("<br></br>")
+			// jQuery('#getproducts').append("Description of Product: ", result[i].description.toString())
+			// jQuery('#getproducts').append("<br></br>")
+			// jQuery('#getproducts').append("price of Product: ", result[i].price.toString())
+			// jQuery('#getproducts').append("<br></br>")
+			
 		})
 		
 	})
@@ -211,11 +222,12 @@ App = {
 	return registerInstance.checkTransferredProducts({from: account}).then((result)=>{
 		x = result;
 		console.log(x);
-		for (var i = 0; i < result.length; i++) {
-			
-			jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " , "<br></br>");
-			jQuery('#gettransferredproducts').append("<i > Products bought by  : </i> " , result[i].boughtby.toString(),"<br></br>");
-			jQuery('#gettransferredproducts').append("<i > Transferred Products Review: </i> " , result[i].review.toString(),"<br></br>");
+		console.log(x.length)
+		for (var i = 0; i < x.length; i++) {
+			console.log(x[i]['boughtBy'])
+			jQuery('#gettransferredproducts').append("<i > Transferred Products : </i> " + "<br></br>");
+			jQuery('#gettransferredproducts').append("<i > Products bought by  : </i> " + x[i].boughtBy.toString() + "<br></br>");
+			jQuery('#gettransferredproducts').append("<i > Transferred Products Review: </i> " + x[i].review.toString() + "<br></br>");
 			
 
 			jQuery('#gettransferredproducts').append("<br></br>")

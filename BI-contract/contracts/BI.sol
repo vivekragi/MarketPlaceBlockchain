@@ -9,9 +9,10 @@ contract BI is ERC20, Ownable
     struct Product
     {
         uint prodID;
-        address[] owners;
+        address owner;
         string description;
         uint price;
+        uint sold;
     }
 
     struct boughtProduct {
@@ -28,7 +29,8 @@ contract BI is ERC20, Ownable
         uint regStatus;
         uint sellerBal;
     }
-    Product[] public products ;
+    Product[] public products;
+    
     boughtProduct[] public transferredProducts; 
     Product public productinfo;
     uint public available;
@@ -40,6 +42,7 @@ contract BI is ERC20, Ownable
     constructor () ERC20("BuffaloInstrumentsToken", "BITS")  { 
         _mint(msg.sender, 1000000 * 10 ** decimals());
         chairperson = msg.sender;
+        
     }
 
     modifier onlyChairperson{ 
@@ -91,12 +94,21 @@ contract BI is ERC20, Ownable
        productinfo.prodID = id;
        productinfo.description = desc;
        productinfo.price = cost;
-       productinfo.owners.push(owner);
+       productinfo.owner = (owner);
+       productinfo.sold = 0;
        products.push(productinfo);
        available += 1;
     }
 
     function seeProductsInfo () public view returns (Product[] memory) {
+        // Product[] memory temp;
+        // uint i = 0;
+        // for (uint x = 0; x <= products.length - 1; ++x) {
+        //     if (products[x].sold != 1) {
+        //         temp[i] = products[x];
+        //         i+=1;
+        //     }
+        // }
         return products;
     }
     
@@ -118,14 +130,13 @@ contract BI is ERC20, Ownable
 
     function buyProducts(uint id, address latest, uint amt) validBuyer payable external {
         
-        uint cp;
+        // uint cp;
         for (uint x = 0; x <= products.length - 1; ++x) {
             if (products[x].prodID == id) {
                 
-                cp = products[x].price;
-                
-                products[x].owners.pop();
+                // cp = products[x].price;
                 available--;
+                products[x].sold = 1;
             }
         }
         // uint cpether = cp * 1000000000000000000; //change it e^18

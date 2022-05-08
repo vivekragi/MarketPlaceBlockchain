@@ -9,7 +9,7 @@ module.exports = {
   ropsten: {
 
     provider: () => 
-      new HDWalletProvider(memonic,  "https://ropsten.infura.io/v3/a48fcd99b6ca42e5b4acb5d72b6f942d"),
+      new HDWalletProvider(memonic,  "wss://ropsten.infura.io/ws/v3/4bada20039124991ab4068b3cbfef7b5"),
     
     network_id: 3,
     gas: 8000000,
@@ -36,3 +36,30 @@ module.exports = {
   },
 
 };
+// Ganache
+
+// module.exports = {
+//   // See <http://truffleframework.com/docs/advanced/configuration>
+//   // to customize your Truffle configuration!
+//   networks: {
+//     development: {
+//       host: "localhost",
+//       port: 7545,
+//       network_id: "*"
+//     }
+//   },
+
+//   compilers: {
+//     solc: {
+//       version: "0.8.7",    // Fetch exact version from solc-bin (default: truffle's version)
+//       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+//       // settings: {          // See the solidity docs for advice about optimization and evmVersion
+//       //  optimizer: {
+//       //    enabled: false,
+//       //    runs: 200
+//       //  },
+//       //  evmVersion: "byzantium"
+//       // }
+//     }
+//   },
+// };

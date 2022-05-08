@@ -604,7 +604,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-07T21:05:16.663Z",
+  "updatedAt": "2022-05-08T15:23:47.196Z",
   "devdoc": {
     "details": "Base abstract escrow to only allow withdrawal if a condition is met.Intended usage: See {Escrow}. Same usage guidelines apply here.",
     "kind": "dev",

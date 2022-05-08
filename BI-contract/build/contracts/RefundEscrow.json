@@ -9680,7 +9680,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-07T21:05:16.668Z",
+  "updatedAt": "2022-05-08T15:23:47.202Z",
   "devdoc": {
     "details": "Escrow that holds funds for a beneficiary, deposited from multiple parties.Intended usage: See {Escrow}. Same usage guidelines apply here.The owner account (that is, the contract that instantiates this contract) may deposit, close the deposit period, and allow for either withdrawal by the beneficiary, or refunds to the depositors. All interactions with `RefundEscrow` will be made through the owner contract.",
     "kind": "dev",
