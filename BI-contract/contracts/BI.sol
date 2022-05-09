@@ -77,15 +77,15 @@ contract BI is ERC20, Ownable
         // Sellers[msg.sender].sellerBal = address(msg.sender).balance;
     }
 
-    function unregister (address payable addr) onlyChairperson public {
+    function unregister (address addr) onlyChairperson public {
         
         if (Buyers[addr].regStatus!= 1) { 
             Buyers[addr].regStatus = 0;
-            revert();
+            // revert();
         }
         if (Sellers[addr].regStatus!= 2) {
             Sellers[addr].regStatus = 0;
-            revert();
+            // revert();
         }
         
     }
@@ -142,8 +142,9 @@ contract BI is ERC20, Ownable
         // uint cpether = cp * 1000000000000000000; //change it e^18
         // require(Buyers[msg.sender].buyerBal >= (cpether));
         // Buyers[msg.sender].buyerBal -= (cpether);
-        _transfer(msg.sender, latest, amt);
-        
+        // _transfer(msg.sender, latest, amt);
+        _transfer(msg.sender, latest, amt * 95/100);
+        _transfer(msg.sender, address(this), amt * 5/100);
         boughtProduct memory bp;
         // bp.unitsBought = count;
         bp.boughtBy = msg.sender;
