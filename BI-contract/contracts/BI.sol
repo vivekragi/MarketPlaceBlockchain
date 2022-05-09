@@ -142,7 +142,7 @@ contract BI is ERC20, Ownable
         // uint cpether = cp * 1000000000000000000; //change it e^18
         // require(Buyers[msg.sender].buyerBal >= (cpether));
         // Buyers[msg.sender].buyerBal -= (cpether);
-        _transfer(msg.sender, latest, amt);
+        _transfer(msg.sender, latest, amt * 10 ** (18));
         
         boughtProduct memory bp;
         // bp.unitsBought = count;

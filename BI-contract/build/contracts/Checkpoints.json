@@ -1,35 +1,35 @@
 {
   "contractName": "Checkpoints",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"This library defines the `History` struct, for checkpointing values as they change at different points in time, and later looking up past values by block number. See {Votes} as an example. To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new checkpoint for the current transaction block using the {push} function. _Available since v4.5._\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utils/Checkpoints.sol\":\"Checkpoints\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utils/Checkpoints.sol\":{\"keccak256\":\"0x2e109f03a05809288a1478d4d9fcd0804229207e18d1164ce0597fb0958a159c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d9495415607fcbd1c940e726f396c46892af8c8772247c002650deacaf5199fb\",\"dweb:/ipfs/QmagLfEk1NCaJEMVDP3ix9BmXy6mccVUMfKAbWQFtjkjvJ\"]},\"project:/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xc995bddbca1ae19788db9f8b61e63385edd3fddf89693b612d5abd1a275974d2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ab84f13e6e6e0823854a0cddd49e96df052092d5919f95587607f0ed28a64cb6\",\"dweb:/ipfs/QmbNtqAq23ZDjCzHukQaa7B3y6rcobscm6FZF5PMQXcnVr\"]},\"project:/contracts/utils/math/SafeCast.sol\":{\"keccak256\":\"0x5c6caab697d302ad7eb59c234a4d2dbc965c1bae87709bd2850060b7695b28c7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb62abcee612c175f1b9bc70e5dfe5bd23473c99987ade6e80e291f68dc60ff1\",\"dweb:/ipfs/QmZCMajhG7FtRYNDwBchXN89mXR6HLPVzr9732qfUdNf9E\"]}},\"version\":1}",
-  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122074a13345e105a9767daadbbe0cb948a53a7b436c502d31044e6cdd2fae2e892764736f6c63430008070033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122074a13345e105a9767daadbbe0cb948a53a7b436c502d31044e6cdd2fae2e892764736f6c63430008070033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"This library defines the `History` struct, for checkpointing values as they change at different points in time, and later looking up past values by block number. See {Votes} as an example. To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new checkpoint for the current transaction block using the {push} function. _Available since v4.5._\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/utils/Checkpoints.sol\":\"Checkpoints\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/utils/Checkpoints.sol\":{\"keccak256\":\"0x18c6e8958198ae5ec8ce4c622f397f9f0f3913dbe88db99f8a502d027e6b9ba4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://30f42b8408852d983adffbd94bfdb324839fdde3d27f960050a124bf58d70d84\",\"dweb:/ipfs/Qmb2VKoLvTEPeAdGCWXScqbXS2LVHUKETMjSN23x5wcMFv\"]},\"project:/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xec9a9186fc26525e16ae80c82c13618c157a1817c0eff4bf4ef95fd4882ec008\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cbd09f0a88741b5956d7b94320e9fccba3e01550cc040415e46093500e2a51f5\",\"dweb:/ipfs/QmX1ybytBmt3saL8Tzby9PGsunRdFkqA4c7zuGytX5JERD\"]},\"project:/contracts/utils/math/SafeCast.sol\":{\"keccak256\":\"0x1f77077cd373581ba0de8d47f9c0070ba30122099bfef894bbb8ef2912d841e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://61d2a722792efc78b89bcee857912d5c6fec0d09073ecf4ec4902c257dfb15af\",\"dweb:/ipfs/QmVrL9afe6MBdbXLUABPtsnL2CZZo96WtgcNq8PQ6Bm4QD\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206d9f4a38ad04ea6a885d61fe2e6995cdf32b80ccd0b6d8c47262f99bd1fcfbf964736f6c63430008070033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206d9f4a38ad04ea6a885d61fe2e6995cdf32b80ccd0b6d8c47262f99bd1fcfbf964736f6c63430008070033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "619:2435:128:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "619:2435:128:-:0;;;;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\n// OpenZeppelin Contracts (last updated v4.5.0) (utils/Checkpoints.sol)\npragma solidity ^0.8.0;\n\nimport \"./math/Math.sol\";\nimport \"./math/SafeCast.sol\";\n\n/**\n * @dev This library defines the `History` struct, for checkpointing values as they change at different points in\n * time, and later looking up past values by block number. See {Votes} as an example.\n *\n * To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new\n * checkpoint for the current transaction block using the {push} function.\n *\n * _Available since v4.5._\n */\nlibrary Checkpoints {\n    struct Checkpoint {\n        uint32 _blockNumber;\n        uint224 _value;\n    }\n\n    struct History {\n        Checkpoint[] _checkpoints;\n    }\n\n    /**\n     * @dev Returns the value in the latest checkpoint, or zero if there are no checkpoints.\n     */\n    function latest(History storage self) internal view returns (uint256) {\n        uint256 pos = self._checkpoints.length;\n        return pos == 0 ? 0 : self._checkpoints[pos - 1]._value;\n    }\n\n    /**\n     * @dev Returns the value at a given block number. If a checkpoint is not available at that block, the closest one\n     * before it is returned, or zero otherwise.\n     */\n    function getAtBlock(History storage self, uint256 blockNumber) internal view returns (uint256) {\n        require(blockNumber < block.number, \"Checkpoints: block not yet mined\");\n\n        uint256 high = self._checkpoints.length;\n        uint256 low = 0;\n        while (low < high) {\n            uint256 mid = Math.average(low, high);\n            if (self._checkpoints[mid]._blockNumber > blockNumber) {\n                high = mid;\n            } else {\n                low = mid + 1;\n            }\n        }\n        return high == 0 ? 0 : self._checkpoints[high - 1]._value;\n    }\n\n    /**\n     * @dev Pushes a value onto a History so that it is stored as the checkpoint for the current block.\n     *\n     * Returns previous value and new value.\n     */\n    function push(History storage self, uint256 value) internal returns (uint256, uint256) {\n        uint256 pos = self._checkpoints.length;\n        uint256 old = latest(self);\n        if (pos > 0 && self._checkpoints[pos - 1]._blockNumber == block.number) {\n            self._checkpoints[pos - 1]._value = SafeCast.toUint224(value);\n        } else {\n            self._checkpoints.push(\n                Checkpoint({_blockNumber: SafeCast.toUint32(block.number), _value: SafeCast.toUint224(value)})\n            );\n        }\n        return (old, value);\n    }\n\n    /**\n     * @dev Pushes a value onto a History, by updating the latest value using binary operation `op`. The new value will\n     * be set to `op(latest, delta)`.\n     *\n     * Returns previous value and new value.\n     */\n    function push(\n        History storage self,\n        function(uint256, uint256) view returns (uint256) op,\n        uint256 delta\n    ) internal returns (uint256, uint256) {\n        return push(self, op(latest(self), delta));\n    }\n}\n",
-  "sourcePath": "/Users/vivekreddy/Documents/Spring2022/Blockchain/Code/BI_Final/BI-contract/contracts/utils/Checkpoints.sol",
+  "sourceMap": "635:2504:129:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "635:2504:129:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\n// OpenZeppelin Contracts (last updated v4.5.0) (utils/Checkpoints.sol)\r\npragma solidity ^0.8.0;\r\n\r\nimport \"./math/Math.sol\";\r\nimport \"./math/SafeCast.sol\";\r\n\r\n/**\r\n * @dev This library defines the `History` struct, for checkpointing values as they change at different points in\r\n * time, and later looking up past values by block number. See {Votes} as an example.\r\n *\r\n * To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new\r\n * checkpoint for the current transaction block using the {push} function.\r\n *\r\n * _Available since v4.5._\r\n */\r\nlibrary Checkpoints {\r\n    struct Checkpoint {\r\n        uint32 _blockNumber;\r\n        uint224 _value;\r\n    }\r\n\r\n    struct History {\r\n        Checkpoint[] _checkpoints;\r\n    }\r\n\r\n    /**\r\n     * @dev Returns the value in the latest checkpoint, or zero if there are no checkpoints.\r\n     */\r\n    function latest(History storage self) internal view returns (uint256) {\r\n        uint256 pos = self._checkpoints.length;\r\n        return pos == 0 ? 0 : self._checkpoints[pos - 1]._value;\r\n    }\r\n\r\n    /**\r\n     * @dev Returns the value at a given block number. If a checkpoint is not available at that block, the closest one\r\n     * before it is returned, or zero otherwise.\r\n     */\r\n    function getAtBlock(History storage self, uint256 blockNumber) internal view returns (uint256) {\r\n        require(blockNumber < block.number, \"Checkpoints: block not yet mined\");\r\n\r\n        uint256 high = self._checkpoints.length;\r\n        uint256 low = 0;\r\n        while (low < high) {\r\n            uint256 mid = Math.average(low, high);\r\n            if (self._checkpoints[mid]._blockNumber > blockNumber) {\r\n                high = mid;\r\n            } else {\r\n                low = mid + 1;\r\n            }\r\n        }\r\n        return high == 0 ? 0 : self._checkpoints[high - 1]._value;\r\n    }\r\n\r\n    /**\r\n     * @dev Pushes a value onto a History so that it is stored as the checkpoint for the current block.\r\n     *\r\n     * Returns previous value and new value.\r\n     */\r\n    function push(History storage self, uint256 value) internal returns (uint256, uint256) {\r\n        uint256 pos = self._checkpoints.length;\r\n        uint256 old = latest(self);\r\n        if (pos > 0 && self._checkpoints[pos - 1]._blockNumber == block.number) {\r\n            self._checkpoints[pos - 1]._value = SafeCast.toUint224(value);\r\n        } else {\r\n            self._checkpoints.push(\r\n                Checkpoint({_blockNumber: SafeCast.toUint32(block.number), _value: SafeCast.toUint224(value)})\r\n            );\r\n        }\r\n        return (old, value);\r\n    }\r\n\r\n    /**\r\n     * @dev Pushes a value onto a History, by updating the latest value using binary operation `op`. The new value will\r\n     * be set to `op(latest, delta)`.\r\n     *\r\n     * Returns previous value and new value.\r\n     */\r\n    function push(\r\n        History storage self,\r\n        function(uint256, uint256) view returns (uint256) op,\r\n        uint256 delta\r\n    ) internal returns (uint256, uint256) {\r\n        return push(self, op(latest(self), delta));\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Kshitij\\UBSem2\\CSE 526 - Blockchain\\Project\\Phase3\\MarketPlaceBlockchain\\BI-contract\\contracts\\utils\\Checkpoints.sol",
   "ast": {
     "absolutePath": "project:/contracts/utils/Checkpoints.sol",
     "exportedSymbols": {
       "Checkpoints": [
-        18871
+        18900
       ],
       "Math": [
-        21194
+        21223
       ],
       "SafeCast": [
-        21587
+        21616
       ]
     },
-    "id": 18872,
+    "id": 18901,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 18639,
+        "id": 18668,
         "literals": [
           "solidity",
           "^",
@@ -37,29 +37,29 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "104:23:128"
+        "src": "106:23:129"
       },
       {
         "absolutePath": "project:/contracts/utils/math/Math.sol",
         "file": "./math/Math.sol",
-        "id": 18640,
+        "id": 18669,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 18872,
-        "sourceUnit": 21195,
-        "src": "129:25:128",
+        "scope": 18901,
+        "sourceUnit": 21224,
+        "src": "133:25:129",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/contracts/utils/math/SafeCast.sol",
         "file": "./math/SafeCast.sol",
-        "id": 18641,
+        "id": 18670,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 18872,
-        "sourceUnit": 21588,
-        "src": "155:29:128",
+        "scope": 18901,
+        "sourceUnit": 21617,
+        "src": "160:29:129",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -69,33 +69,33 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 18642,
+          "id": 18671,
           "nodeType": "StructuredDocumentation",
-          "src": "186:432:128",
+          "src": "193:440:129",
           "text": " @dev This library defines the `History` struct, for checkpointing values as they change at different points in\n time, and later looking up past values by block number. See {Votes} as an example.\n To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new\n checkpoint for the current transaction block using the {push} function.\n _Available since v4.5._"
         },
         "fullyImplemented": true,
-        "id": 18871,
+        "id": 18900,
         "linearizedBaseContracts": [
-          18871
+          18900
         ],
         "name": "Checkpoints",
-        "nameLocation": "627:11:128",
+        "nameLocation": "643:11:129",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Checkpoints.Checkpoint",
-            "id": 18647,
+            "id": 18676,
             "members": [
               {
                 "constant": false,
-                "id": 18644,
+                "id": 18673,
                 "mutability": "mutable",
                 "name": "_blockNumber",
-                "nameLocation": "680:12:128",
+                "nameLocation": "698:12:129",
                 "nodeType": "VariableDeclaration",
-                "scope": 18647,
-                "src": "673:19:128",
+                "scope": 18676,
+                "src": "691:19:129",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -103,10 +103,10 @@
                   "typeString": "uint32"
                 },
                 "typeName": {
-                  "id": 18643,
+                  "id": 18672,
                   "name": "uint32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "673:6:128",
+                  "src": "691:6:129",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint32",
                     "typeString": "uint32"
@@ -116,13 +116,13 @@
               },
               {
                 "constant": false,
-                "id": 18646,
+                "id": 18675,
                 "mutability": "mutable",
                 "name": "_value",
-                "nameLocation": "710:6:128",
+                "nameLocation": "729:6:129",
                 "nodeType": "VariableDeclaration",
-                "scope": 18647,
-                "src": "702:14:128",
+                "scope": 18676,
+                "src": "721:14:129",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -130,10 +130,10 @@
                   "typeString": "uint224"
                 },
                 "typeName": {
-                  "id": 18645,
+                  "id": 18674,
                   "name": "uint224",
                   "nodeType": "ElementaryTypeName",
-                  "src": "702:7:128",
+                  "src": "721:7:129",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint224",
                     "typeString": "uint224"
@@ -143,54 +143,54 @@
               }
             ],
             "name": "Checkpoint",
-            "nameLocation": "652:10:128",
+            "nameLocation": "669:10:129",
             "nodeType": "StructDefinition",
-            "scope": 18871,
-            "src": "645:78:128",
+            "scope": 18900,
+            "src": "662:81:129",
             "visibility": "public"
           },
           {
             "canonicalName": "Checkpoints.History",
-            "id": 18652,
+            "id": 18681,
             "members": [
               {
                 "constant": false,
-                "id": 18651,
+                "id": 18680,
                 "mutability": "mutable",
                 "name": "_checkpoints",
-                "nameLocation": "767:12:128",
+                "nameLocation": "790:12:129",
                 "nodeType": "VariableDeclaration",
-                "scope": 18652,
-                "src": "754:25:128",
+                "scope": 18681,
+                "src": "777:25:129",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage_ptr",
                   "typeString": "struct Checkpoints.Checkpoint[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 18649,
+                    "id": 18678,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18648,
+                      "id": 18677,
                       "name": "Checkpoint",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18647,
-                      "src": "754:10:128"
+                      "referencedDeclaration": 18676,
+                      "src": "777:10:129"
                     },
-                    "referencedDeclaration": 18647,
-                    "src": "754:10:128",
+                    "referencedDeclaration": 18676,
+                    "src": "777:10:129",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Checkpoint_$18647_storage_ptr",
+                      "typeIdentifier": "t_struct$_Checkpoint_$18676_storage_ptr",
                       "typeString": "struct Checkpoints.Checkpoint"
                     }
                   },
-                  "id": 18650,
+                  "id": 18679,
                   "nodeType": "ArrayTypeName",
-                  "src": "754:12:128",
+                  "src": "777:12:129",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage_ptr",
                     "typeString": "struct Checkpoints.Checkpoint[]"
                   }
                 },
@@ -198,32 +198,32 @@
               }
             ],
             "name": "History",
-            "nameLocation": "736:7:128",
+            "nameLocation": "758:7:129",
             "nodeType": "StructDefinition",
-            "scope": 18871,
-            "src": "729:57:128",
+            "scope": 18900,
+            "src": "751:59:129",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 18680,
+              "id": 18709,
               "nodeType": "Block",
-              "src": "971:120:128",
+              "src": "1000:123:129",
               "statements": [
                 {
                   "assignments": [
-                    18662
+                    18691
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18662,
+                      "id": 18691,
                       "mutability": "mutable",
                       "name": "pos",
-                      "nameLocation": "989:3:128",
+                      "nameLocation": "1019:3:129",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18680,
-                      "src": "981:11:128",
+                      "scope": 18709,
+                      "src": "1011:11:129",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -231,10 +231,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 18661,
+                        "id": 18690,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "981:7:128",
+                        "src": "1011:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -243,50 +243,50 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18666,
+                  "id": 18695,
                   "initialValue": {
                     "expression": {
                       "expression": {
-                        "id": 18663,
+                        "id": 18692,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18656,
-                        "src": "995:4:128",
+                        "referencedDeclaration": 18685,
+                        "src": "1025:4:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       },
-                      "id": 18664,
+                      "id": 18693,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_checkpoints",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18651,
-                      "src": "995:17:128",
+                      "referencedDeclaration": 18680,
+                      "src": "1025:17:129",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                         "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                       }
                     },
-                    "id": 18665,
+                    "id": 18694,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "length",
                     "nodeType": "MemberAccess",
-                    "src": "995:24:128",
+                    "src": "1025:24:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "981:38:128"
+                  "src": "1011:38:129"
                 },
                 {
                   "expression": {
@@ -295,18 +295,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 18669,
+                      "id": 18698,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 18667,
+                        "id": 18696,
                         "name": "pos",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18662,
-                        "src": "1036:3:128",
+                        "referencedDeclaration": 18691,
+                        "src": "1067:3:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -316,21 +316,21 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "30",
-                        "id": 18668,
+                        "id": 18697,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1043:1:128",
+                        "src": "1074:1:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
                           "typeString": "int_const 0"
                         },
                         "value": "0"
                       },
-                      "src": "1036:8:128",
+                      "src": "1067:8:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -340,49 +340,49 @@
                       "expression": {
                         "baseExpression": {
                           "expression": {
-                            "id": 18671,
+                            "id": 18700,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18656,
-                            "src": "1051:4:128",
+                            "referencedDeclaration": 18685,
+                            "src": "1082:4:129",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                              "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                               "typeString": "struct Checkpoints.History storage pointer"
                             }
                           },
-                          "id": 18672,
+                          "id": 18701,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "_checkpoints",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 18651,
-                          "src": "1051:17:128",
+                          "referencedDeclaration": 18680,
+                          "src": "1082:17:129",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                             "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                           }
                         },
-                        "id": 18676,
+                        "id": 18705,
                         "indexExpression": {
                           "commonType": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 18675,
+                          "id": 18704,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 18673,
+                            "id": 18702,
                             "name": "pos",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18662,
-                            "src": "1069:3:128",
+                            "referencedDeclaration": 18691,
+                            "src": "1100:3:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -392,21 +392,21 @@
                           "operator": "-",
                           "rightExpression": {
                             "hexValue": "31",
-                            "id": 18674,
+                            "id": 18703,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1075:1:128",
+                            "src": "1106:1:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_1_by_1",
                               "typeString": "int_const 1"
                             },
                             "value": "1"
                           },
-                          "src": "1069:7:128",
+                          "src": "1100:7:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -417,43 +417,43 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1051:26:128",
+                        "src": "1082:26:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Checkpoint_$18647_storage",
+                          "typeIdentifier": "t_struct$_Checkpoint_$18676_storage",
                           "typeString": "struct Checkpoints.Checkpoint storage ref"
                         }
                       },
-                      "id": 18677,
+                      "id": 18706,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_value",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18646,
-                      "src": "1051:33:128",
+                      "referencedDeclaration": 18675,
+                      "src": "1082:33:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint224",
                         "typeString": "uint224"
                       }
                     },
-                    "id": 18678,
+                    "id": 18707,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "Conditional",
-                    "src": "1036:48:128",
+                    "src": "1067:48:129",
                     "trueExpression": {
                       "hexValue": "30",
-                      "id": 18670,
+                      "id": 18699,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1047:1:128",
+                      "src": "1078:1:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
                         "typeString": "int_const 0"
@@ -465,80 +465,80 @@
                       "typeString": "uint224"
                     }
                   },
-                  "functionReturnParameters": 18660,
-                  "id": 18679,
+                  "functionReturnParameters": 18689,
+                  "id": 18708,
                   "nodeType": "Return",
-                  "src": "1029:55:128"
+                  "src": "1060:55:129"
                 }
               ]
             },
             "documentation": {
-              "id": 18653,
+              "id": 18682,
               "nodeType": "StructuredDocumentation",
-              "src": "792:104:128",
+              "src": "818:106:129",
               "text": " @dev Returns the value in the latest checkpoint, or zero if there are no checkpoints."
             },
-            "id": 18681,
+            "id": 18710,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "latest",
-            "nameLocation": "910:6:128",
+            "nameLocation": "939:6:129",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 18657,
+              "id": 18686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18656,
+                  "id": 18685,
                   "mutability": "mutable",
                   "name": "self",
-                  "nameLocation": "933:4:128",
+                  "nameLocation": "962:4:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18681,
-                  "src": "917:20:128",
+                  "scope": 18710,
+                  "src": "946:20:129",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                     "typeString": "struct Checkpoints.History"
                   },
                   "typeName": {
-                    "id": 18655,
+                    "id": 18684,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18654,
+                      "id": 18683,
                       "name": "History",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18652,
-                      "src": "917:7:128"
+                      "referencedDeclaration": 18681,
+                      "src": "946:7:129"
                     },
-                    "referencedDeclaration": 18652,
-                    "src": "917:7:128",
+                    "referencedDeclaration": 18681,
+                    "src": "946:7:129",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                      "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                       "typeString": "struct Checkpoints.History"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "916:22:128"
+              "src": "945:22:129"
             },
             "returnParameters": {
-              "id": 18660,
+              "id": 18689,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18659,
+                  "id": 18688,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18681,
-                  "src": "962:7:128",
+                  "scope": 18710,
+                  "src": "991:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -546,10 +546,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18658,
+                    "id": 18687,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "962:7:128",
+                    "src": "991:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -558,19 +558,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "961:9:128"
+              "src": "990:9:129"
             },
-            "scope": 18871,
-            "src": "901:190:128",
+            "scope": 18900,
+            "src": "930:193:129",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 18756,
+              "id": 18785,
               "nodeType": "Block",
-              "src": "1376:483:128",
+              "src": "1414:497:129",
               "statements": [
                 {
                   "expression": {
@@ -580,18 +580,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 18696,
+                        "id": 18725,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 18693,
+                          "id": 18722,
                           "name": "blockNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18687,
-                          "src": "1394:11:128",
+                          "referencedDeclaration": 18716,
+                          "src": "1433:11:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -601,31 +601,31 @@
                         "operator": "<",
                         "rightExpression": {
                           "expression": {
-                            "id": 18694,
+                            "id": 18723,
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 4294967292,
-                            "src": "1408:5:128",
+                            "src": "1447:5:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
                               "typeString": "block"
                             }
                           },
-                          "id": 18695,
+                          "id": 18724,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "number",
                           "nodeType": "MemberAccess",
-                          "src": "1408:12:128",
+                          "src": "1447:12:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "1394:26:128",
+                        "src": "1433:26:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -633,14 +633,14 @@
                       },
                       {
                         "hexValue": "436865636b706f696e74733a20626c6f636b206e6f7420796574206d696e6564",
-                        "id": 18697,
+                        "id": 18726,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1422:34:128",
+                        "src": "1461:34:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_65bd29ebd873d82da6b3634513fc6582859c8e00f2a09cb4bdbeddf7d05eb5be",
                           "typeString": "literal_string \"Checkpoints: block not yet mined\""
@@ -659,7 +659,7 @@
                           "typeString": "literal_string \"Checkpoints: block not yet mined\""
                         }
                       ],
-                      "id": 18692,
+                      "id": 18721,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -667,13 +667,13 @@
                         4294967278
                       ],
                       "referencedDeclaration": 4294967278,
-                      "src": "1386:7:128",
+                      "src": "1425:7:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 18698,
+                    "id": 18727,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -681,31 +681,31 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1386:71:128",
+                    "src": "1425:71:129",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 18699,
+                  "id": 18728,
                   "nodeType": "ExpressionStatement",
-                  "src": "1386:71:128"
+                  "src": "1425:71:129"
                 },
                 {
                   "assignments": [
-                    18701
+                    18730
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18701,
+                      "id": 18730,
                       "mutability": "mutable",
                       "name": "high",
-                      "nameLocation": "1476:4:128",
+                      "nameLocation": "1517:4:129",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18756,
-                      "src": "1468:12:128",
+                      "scope": 18785,
+                      "src": "1509:12:129",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -713,10 +713,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 18700,
+                        "id": 18729,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1468:7:128",
+                        "src": "1509:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -725,65 +725,65 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18705,
+                  "id": 18734,
                   "initialValue": {
                     "expression": {
                       "expression": {
-                        "id": 18702,
+                        "id": 18731,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18685,
-                        "src": "1483:4:128",
+                        "referencedDeclaration": 18714,
+                        "src": "1524:4:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       },
-                      "id": 18703,
+                      "id": 18732,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_checkpoints",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18651,
-                      "src": "1483:17:128",
+                      "referencedDeclaration": 18680,
+                      "src": "1524:17:129",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                         "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                       }
                     },
-                    "id": 18704,
+                    "id": 18733,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "length",
                     "nodeType": "MemberAccess",
-                    "src": "1483:24:128",
+                    "src": "1524:24:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1468:39:128"
+                  "src": "1509:39:129"
                 },
                 {
                   "assignments": [
-                    18707
+                    18736
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18707,
+                      "id": 18736,
                       "mutability": "mutable",
                       "name": "low",
-                      "nameLocation": "1525:3:128",
+                      "nameLocation": "1567:3:129",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18756,
-                      "src": "1517:11:128",
+                      "scope": 18785,
+                      "src": "1559:11:129",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -791,10 +791,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 18706,
+                        "id": 18735,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1517:7:128",
+                        "src": "1559:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -803,17 +803,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18709,
+                  "id": 18738,
                   "initialValue": {
                     "hexValue": "30",
-                    "id": 18708,
+                    "id": 18737,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "1531:1:128",
+                    "src": "1573:1:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_0_by_1",
                       "typeString": "int_const 0"
@@ -821,28 +821,28 @@
                     "value": "0"
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1517:15:128"
+                  "src": "1559:15:129"
                 },
                 {
                   "body": {
-                    "id": 18741,
+                    "id": 18770,
                     "nodeType": "Block",
-                    "src": "1561:225:128",
+                    "src": "1604:232:129",
                     "statements": [
                       {
                         "assignments": [
-                          18714
+                          18743
                         ],
                         "declarations": [
                           {
                             "constant": false,
-                            "id": 18714,
+                            "id": 18743,
                             "mutability": "mutable",
                             "name": "mid",
-                            "nameLocation": "1583:3:128",
+                            "nameLocation": "1627:3:129",
                             "nodeType": "VariableDeclaration",
-                            "scope": 18741,
-                            "src": "1575:11:128",
+                            "scope": 18770,
+                            "src": "1619:11:129",
                             "stateVariable": false,
                             "storageLocation": "default",
                             "typeDescriptions": {
@@ -850,10 +850,10 @@
                               "typeString": "uint256"
                             },
                             "typeName": {
-                              "id": 18713,
+                              "id": 18742,
                               "name": "uint256",
                               "nodeType": "ElementaryTypeName",
-                              "src": "1575:7:128",
+                              "src": "1619:7:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -862,28 +862,28 @@
                             "visibility": "internal"
                           }
                         ],
-                        "id": 18720,
+                        "id": 18749,
                         "initialValue": {
                           "arguments": [
                             {
-                              "id": 18717,
+                              "id": 18746,
                               "name": "low",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18707,
-                              "src": "1602:3:128",
+                              "referencedDeclaration": 18736,
+                              "src": "1646:3:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
                               }
                             },
                             {
-                              "id": 18718,
+                              "id": 18747,
                               "name": "high",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18701,
-                              "src": "1607:4:128",
+                              "referencedDeclaration": 18730,
+                              "src": "1651:4:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -902,32 +902,32 @@
                               }
                             ],
                             "expression": {
-                              "id": 18715,
+                              "id": 18744,
                               "name": "Math",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 21194,
-                              "src": "1589:4:128",
+                              "referencedDeclaration": 21223,
+                              "src": "1633:4:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Math_$21194_$",
+                                "typeIdentifier": "t_type$_t_contract$_Math_$21223_$",
                                 "typeString": "type(library Math)"
                               }
                             },
-                            "id": 18716,
+                            "id": 18745,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "average",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 21168,
-                            "src": "1589:12:128",
+                            "referencedDeclaration": 21197,
+                            "src": "1633:12:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
                               "typeString": "function (uint256,uint256) pure returns (uint256)"
                             }
                           },
-                          "id": 18719,
+                          "id": 18748,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -935,7 +935,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1589:23:128",
+                          "src": "1633:23:129",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -943,7 +943,7 @@
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
-                        "src": "1575:37:128"
+                        "src": "1619:37:129"
                       },
                       {
                         "condition": {
@@ -951,7 +951,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 18727,
+                          "id": 18756,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -960,39 +960,39 @@
                             "expression": {
                               "baseExpression": {
                                 "expression": {
-                                  "id": 18721,
+                                  "id": 18750,
                                   "name": "self",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18685,
-                                  "src": "1630:4:128",
+                                  "referencedDeclaration": 18714,
+                                  "src": "1675:4:129",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                     "typeString": "struct Checkpoints.History storage pointer"
                                   }
                                 },
-                                "id": 18722,
+                                "id": 18751,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "_checkpoints",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 18651,
-                                "src": "1630:17:128",
+                                "referencedDeclaration": 18680,
+                                "src": "1675:17:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                                   "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                                 }
                               },
-                              "id": 18724,
+                              "id": 18753,
                               "indexExpression": {
-                                "id": 18723,
+                                "id": 18752,
                                 "name": "mid",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18714,
-                                "src": "1648:3:128",
+                                "referencedDeclaration": 18743,
+                                "src": "1693:3:129",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -1003,21 +1003,21 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "1630:22:128",
+                              "src": "1675:22:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Checkpoint_$18647_storage",
+                                "typeIdentifier": "t_struct$_Checkpoint_$18676_storage",
                                 "typeString": "struct Checkpoints.Checkpoint storage ref"
                               }
                             },
-                            "id": 18725,
+                            "id": 18754,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "_blockNumber",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18644,
-                            "src": "1630:35:128",
+                            "referencedDeclaration": 18673,
+                            "src": "1675:35:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint32",
                               "typeString": "uint32"
@@ -1026,42 +1026,42 @@
                           "nodeType": "BinaryOperation",
                           "operator": ">",
                           "rightExpression": {
-                            "id": 18726,
+                            "id": 18755,
                             "name": "blockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18687,
-                            "src": "1668:11:128",
+                            "referencedDeclaration": 18716,
+                            "src": "1713:11:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "1630:49:128",
+                          "src": "1675:49:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
                         "falseBody": {
-                          "id": 18739,
+                          "id": 18768,
                           "nodeType": "Block",
-                          "src": "1730:46:128",
+                          "src": "1777:48:129",
                           "statements": [
                             {
                               "expression": {
-                                "id": 18737,
+                                "id": 18766,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
-                                  "id": 18733,
+                                  "id": 18762,
                                   "name": "low",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18707,
-                                  "src": "1748:3:128",
+                                  "referencedDeclaration": 18736,
+                                  "src": "1796:3:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
@@ -1074,18 +1074,18 @@
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
                                   },
-                                  "id": 18736,
+                                  "id": 18765,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "leftExpression": {
-                                    "id": 18734,
+                                    "id": 18763,
                                     "name": "mid",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 18714,
-                                    "src": "1754:3:128",
+                                    "referencedDeclaration": 18743,
+                                    "src": "1802:3:129",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
                                       "typeString": "uint256"
@@ -1095,60 +1095,60 @@
                                   "operator": "+",
                                   "rightExpression": {
                                     "hexValue": "31",
-                                    "id": 18735,
+                                    "id": 18764,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": true,
                                     "kind": "number",
                                     "lValueRequested": false,
                                     "nodeType": "Literal",
-                                    "src": "1760:1:128",
+                                    "src": "1808:1:129",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_rational_1_by_1",
                                       "typeString": "int_const 1"
                                     },
                                     "value": "1"
                                   },
-                                  "src": "1754:7:128",
+                                  "src": "1802:7:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
                                   }
                                 },
-                                "src": "1748:13:128",
+                                "src": "1796:13:129",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 }
                               },
-                              "id": 18738,
+                              "id": 18767,
                               "nodeType": "ExpressionStatement",
-                              "src": "1748:13:128"
+                              "src": "1796:13:129"
                             }
                           ]
                         },
-                        "id": 18740,
+                        "id": 18769,
                         "nodeType": "IfStatement",
-                        "src": "1626:150:128",
+                        "src": "1671:154:129",
                         "trueBody": {
-                          "id": 18732,
+                          "id": 18761,
                           "nodeType": "Block",
-                          "src": "1681:43:128",
+                          "src": "1726:45:129",
                           "statements": [
                             {
                               "expression": {
-                                "id": 18730,
+                                "id": 18759,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
-                                  "id": 18728,
+                                  "id": 18757,
                                   "name": "high",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18701,
-                                  "src": "1699:4:128",
+                                  "referencedDeclaration": 18730,
+                                  "src": "1745:4:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
@@ -1157,26 +1157,26 @@
                                 "nodeType": "Assignment",
                                 "operator": "=",
                                 "rightHandSide": {
-                                  "id": 18729,
+                                  "id": 18758,
                                   "name": "mid",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18714,
-                                  "src": "1706:3:128",
+                                  "referencedDeclaration": 18743,
+                                  "src": "1752:3:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
                                   }
                                 },
-                                "src": "1699:10:128",
+                                "src": "1745:10:129",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 }
                               },
-                              "id": 18731,
+                              "id": 18760,
                               "nodeType": "ExpressionStatement",
-                              "src": "1699:10:128"
+                              "src": "1745:10:129"
                             }
                           ]
                         }
@@ -1188,18 +1188,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 18712,
+                    "id": 18741,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 18710,
+                      "id": 18739,
                       "name": "low",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 18707,
-                      "src": "1549:3:128",
+                      "referencedDeclaration": 18736,
+                      "src": "1592:3:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1208,26 +1208,26 @@
                     "nodeType": "BinaryOperation",
                     "operator": "<",
                     "rightExpression": {
-                      "id": 18711,
+                      "id": 18740,
                       "name": "high",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 18701,
-                      "src": "1555:4:128",
+                      "referencedDeclaration": 18730,
+                      "src": "1598:4:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1549:10:128",
+                    "src": "1592:10:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 18742,
+                  "id": 18771,
                   "nodeType": "WhileStatement",
-                  "src": "1542:244:128"
+                  "src": "1585:251:129"
                 },
                 {
                   "expression": {
@@ -1236,18 +1236,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 18745,
+                      "id": 18774,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 18743,
+                        "id": 18772,
                         "name": "high",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18701,
-                        "src": "1802:4:128",
+                        "referencedDeclaration": 18730,
+                        "src": "1853:4:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1257,21 +1257,21 @@
                       "operator": "==",
                       "rightExpression": {
                         "hexValue": "30",
-                        "id": 18744,
+                        "id": 18773,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1810:1:128",
+                        "src": "1861:1:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
                           "typeString": "int_const 0"
                         },
                         "value": "0"
                       },
-                      "src": "1802:9:128",
+                      "src": "1853:9:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1281,49 +1281,49 @@
                       "expression": {
                         "baseExpression": {
                           "expression": {
-                            "id": 18747,
+                            "id": 18776,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18685,
-                            "src": "1818:4:128",
+                            "referencedDeclaration": 18714,
+                            "src": "1869:4:129",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                              "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                               "typeString": "struct Checkpoints.History storage pointer"
                             }
                           },
-                          "id": 18748,
+                          "id": 18777,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "_checkpoints",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 18651,
-                          "src": "1818:17:128",
+                          "referencedDeclaration": 18680,
+                          "src": "1869:17:129",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                             "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                           }
                         },
-                        "id": 18752,
+                        "id": 18781,
                         "indexExpression": {
                           "commonType": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 18751,
+                          "id": 18780,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 18749,
+                            "id": 18778,
                             "name": "high",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18701,
-                            "src": "1836:4:128",
+                            "referencedDeclaration": 18730,
+                            "src": "1887:4:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1333,21 +1333,21 @@
                           "operator": "-",
                           "rightExpression": {
                             "hexValue": "31",
-                            "id": 18750,
+                            "id": 18779,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "1843:1:128",
+                            "src": "1894:1:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_1_by_1",
                               "typeString": "int_const 1"
                             },
                             "value": "1"
                           },
-                          "src": "1836:8:128",
+                          "src": "1887:8:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1358,43 +1358,43 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1818:27:128",
+                        "src": "1869:27:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Checkpoint_$18647_storage",
+                          "typeIdentifier": "t_struct$_Checkpoint_$18676_storage",
                           "typeString": "struct Checkpoints.Checkpoint storage ref"
                         }
                       },
-                      "id": 18753,
+                      "id": 18782,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_value",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18646,
-                      "src": "1818:34:128",
+                      "referencedDeclaration": 18675,
+                      "src": "1869:34:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint224",
                         "typeString": "uint224"
                       }
                     },
-                    "id": 18754,
+                    "id": 18783,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "Conditional",
-                    "src": "1802:50:128",
+                    "src": "1853:50:129",
                     "trueExpression": {
                       "hexValue": "30",
-                      "id": 18746,
+                      "id": 18775,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "1814:1:128",
+                      "src": "1865:1:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
                         "typeString": "int_const 0"
@@ -1406,59 +1406,59 @@
                       "typeString": "uint224"
                     }
                   },
-                  "functionReturnParameters": 18691,
-                  "id": 18755,
+                  "functionReturnParameters": 18720,
+                  "id": 18784,
                   "nodeType": "Return",
-                  "src": "1795:57:128"
+                  "src": "1846:57:129"
                 }
               ]
             },
             "documentation": {
-              "id": 18682,
+              "id": 18711,
               "nodeType": "StructuredDocumentation",
-              "src": "1097:179:128",
+              "src": "1131:182:129",
               "text": " @dev Returns the value at a given block number. If a checkpoint is not available at that block, the closest one\n before it is returned, or zero otherwise."
             },
-            "id": 18757,
+            "id": 18786,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAtBlock",
-            "nameLocation": "1290:10:128",
+            "nameLocation": "1328:10:129",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 18688,
+              "id": 18717,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18685,
+                  "id": 18714,
                   "mutability": "mutable",
                   "name": "self",
-                  "nameLocation": "1317:4:128",
+                  "nameLocation": "1355:4:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18757,
-                  "src": "1301:20:128",
+                  "scope": 18786,
+                  "src": "1339:20:129",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                     "typeString": "struct Checkpoints.History"
                   },
                   "typeName": {
-                    "id": 18684,
+                    "id": 18713,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18683,
+                      "id": 18712,
                       "name": "History",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18652,
-                      "src": "1301:7:128"
+                      "referencedDeclaration": 18681,
+                      "src": "1339:7:129"
                     },
-                    "referencedDeclaration": 18652,
-                    "src": "1301:7:128",
+                    "referencedDeclaration": 18681,
+                    "src": "1339:7:129",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                      "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                       "typeString": "struct Checkpoints.History"
                     }
                   },
@@ -1466,13 +1466,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18687,
+                  "id": 18716,
                   "mutability": "mutable",
                   "name": "blockNumber",
-                  "nameLocation": "1331:11:128",
+                  "nameLocation": "1369:11:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18757,
-                  "src": "1323:19:128",
+                  "scope": 18786,
+                  "src": "1361:19:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1480,10 +1480,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18686,
+                    "id": 18715,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1323:7:128",
+                    "src": "1361:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1492,21 +1492,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1300:43:128"
+              "src": "1338:43:129"
             },
             "returnParameters": {
-              "id": 18691,
+              "id": 18720,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18690,
+                  "id": 18719,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18757,
-                  "src": "1367:7:128",
+                  "scope": 18786,
+                  "src": "1405:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1514,10 +1514,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18689,
+                    "id": 18718,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1367:7:128",
+                    "src": "1405:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1526,34 +1526,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1366:9:128"
+              "src": "1404:9:129"
             },
-            "scope": 18871,
-            "src": "1281:578:128",
+            "scope": 18900,
+            "src": "1319:592:129",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 18835,
+              "id": 18864,
               "nodeType": "Block",
-              "src": "2124:466:128",
+              "src": "2183:477:129",
               "statements": [
                 {
                   "assignments": [
-                    18771
+                    18800
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18771,
+                      "id": 18800,
                       "mutability": "mutable",
                       "name": "pos",
-                      "nameLocation": "2142:3:128",
+                      "nameLocation": "2202:3:129",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18835,
-                      "src": "2134:11:128",
+                      "scope": 18864,
+                      "src": "2194:11:129",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1561,10 +1561,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 18770,
+                        "id": 18799,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "2134:7:128",
+                        "src": "2194:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1573,65 +1573,65 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18775,
+                  "id": 18804,
                   "initialValue": {
                     "expression": {
                       "expression": {
-                        "id": 18772,
+                        "id": 18801,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18761,
-                        "src": "2148:4:128",
+                        "referencedDeclaration": 18790,
+                        "src": "2208:4:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       },
-                      "id": 18773,
+                      "id": 18802,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_checkpoints",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18651,
-                      "src": "2148:17:128",
+                      "referencedDeclaration": 18680,
+                      "src": "2208:17:129",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                         "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                       }
                     },
-                    "id": 18774,
+                    "id": 18803,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "length",
                     "nodeType": "MemberAccess",
-                    "src": "2148:24:128",
+                    "src": "2208:24:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "2134:38:128"
+                  "src": "2194:38:129"
                 },
                 {
                   "assignments": [
-                    18777
+                    18806
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 18777,
+                      "id": 18806,
                       "mutability": "mutable",
                       "name": "old",
-                      "nameLocation": "2190:3:128",
+                      "nameLocation": "2251:3:129",
                       "nodeType": "VariableDeclaration",
-                      "scope": 18835,
-                      "src": "2182:11:128",
+                      "scope": 18864,
+                      "src": "2243:11:129",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1639,10 +1639,10 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 18776,
+                        "id": 18805,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "2182:7:128",
+                        "src": "2243:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1651,18 +1651,18 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 18781,
+                  "id": 18810,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 18779,
+                        "id": 18808,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18761,
-                        "src": "2203:4:128",
+                        "referencedDeclaration": 18790,
+                        "src": "2264:4:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       }
@@ -1670,22 +1670,22 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       ],
-                      "id": 18778,
+                      "id": 18807,
                       "name": "latest",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 18681,
-                      "src": "2196:6:128",
+                      "referencedDeclaration": 18710,
+                      "src": "2257:6:129",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_History_$18652_storage_ptr_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_History_$18681_storage_ptr_$returns$_t_uint256_$",
                         "typeString": "function (struct Checkpoints.History storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 18780,
+                    "id": 18809,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1693,7 +1693,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "2196:12:128",
+                    "src": "2257:12:129",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -1701,7 +1701,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "2182:26:128"
+                  "src": "2243:26:129"
                 },
                 {
                   "condition": {
@@ -1709,7 +1709,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 18795,
+                    "id": 18824,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1719,18 +1719,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 18784,
+                      "id": 18813,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 18782,
+                        "id": 18811,
                         "name": "pos",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18771,
-                        "src": "2222:3:128",
+                        "referencedDeclaration": 18800,
+                        "src": "2284:3:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1740,21 +1740,21 @@
                       "operator": ">",
                       "rightExpression": {
                         "hexValue": "30",
-                        "id": 18783,
+                        "id": 18812,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "2228:1:128",
+                        "src": "2290:1:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_0_by_1",
                           "typeString": "int_const 0"
                         },
                         "value": "0"
                       },
-                      "src": "2222:7:128",
+                      "src": "2284:7:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1767,7 +1767,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 18794,
+                      "id": 18823,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1776,49 +1776,49 @@
                         "expression": {
                           "baseExpression": {
                             "expression": {
-                              "id": 18785,
+                              "id": 18814,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18761,
-                              "src": "2233:4:128",
+                              "referencedDeclaration": 18790,
+                              "src": "2295:4:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                 "typeString": "struct Checkpoints.History storage pointer"
                               }
                             },
-                            "id": 18786,
+                            "id": 18815,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "_checkpoints",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18651,
-                            "src": "2233:17:128",
+                            "referencedDeclaration": 18680,
+                            "src": "2295:17:129",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                               "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                             }
                           },
-                          "id": 18790,
+                          "id": 18819,
                           "indexExpression": {
                             "commonType": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             },
-                            "id": 18789,
+                            "id": 18818,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
-                              "id": 18787,
+                              "id": 18816,
                               "name": "pos",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18771,
-                              "src": "2251:3:128",
+                              "referencedDeclaration": 18800,
+                              "src": "2313:3:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -1828,21 +1828,21 @@
                             "operator": "-",
                             "rightExpression": {
                               "hexValue": "31",
-                              "id": 18788,
+                              "id": 18817,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "2257:1:128",
+                              "src": "2319:1:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_1_by_1",
                                 "typeString": "int_const 1"
                               },
                               "value": "1"
                             },
-                            "src": "2251:7:128",
+                            "src": "2313:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1853,21 +1853,21 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "2233:26:128",
+                          "src": "2295:26:129",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Checkpoint_$18647_storage",
+                            "typeIdentifier": "t_struct$_Checkpoint_$18676_storage",
                             "typeString": "struct Checkpoints.Checkpoint storage ref"
                           }
                         },
-                        "id": 18791,
+                        "id": 18820,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "_blockNumber",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 18644,
-                        "src": "2233:39:128",
+                        "referencedDeclaration": 18673,
+                        "src": "2295:39:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint32",
                           "typeString": "uint32"
@@ -1877,46 +1877,46 @@
                       "operator": "==",
                       "rightExpression": {
                         "expression": {
-                          "id": 18792,
+                          "id": 18821,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967292,
-                          "src": "2276:5:128",
+                          "src": "2338:5:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 18793,
+                        "id": 18822,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "number",
                         "nodeType": "MemberAccess",
-                        "src": "2276:12:128",
+                        "src": "2338:12:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "src": "2233:55:128",
+                      "src": "2295:55:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "2222:66:128",
+                    "src": "2284:66:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
                   "falseBody": {
-                    "id": 18829,
+                    "id": 18858,
                     "nodeType": "Block",
-                    "src": "2382:173:128",
+                    "src": "2446:177:129",
                     "statements": [
                       {
                         "expression": {
@@ -1927,25 +1927,25 @@
                                   "arguments": [
                                     {
                                       "expression": {
-                                        "id": 18819,
+                                        "id": 18848,
                                         "name": "block",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
                                         "referencedDeclaration": 4294967292,
-                                        "src": "2480:5:128",
+                                        "src": "2546:5:129",
                                         "typeDescriptions": {
                                           "typeIdentifier": "t_magic_block",
                                           "typeString": "block"
                                         }
                                       },
-                                      "id": 18820,
+                                      "id": 18849,
                                       "isConstant": false,
                                       "isLValue": false,
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "memberName": "number",
                                       "nodeType": "MemberAccess",
-                                      "src": "2480:12:128",
+                                      "src": "2546:12:129",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -1960,32 +1960,32 @@
                                       }
                                     ],
                                     "expression": {
-                                      "id": 18817,
+                                      "id": 18846,
                                       "name": "SafeCast",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 21587,
-                                      "src": "2462:8:128",
+                                      "referencedDeclaration": 21616,
+                                      "src": "2528:8:129",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_SafeCast_$21587_$",
+                                        "typeIdentifier": "t_type$_t_contract$_SafeCast_$21616_$",
                                         "typeString": "type(library SafeCast)"
                                       }
                                     },
-                                    "id": 18818,
+                                    "id": 18847,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "toUint32",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 21322,
-                                    "src": "2462:17:128",
+                                    "referencedDeclaration": 21351,
+                                    "src": "2528:17:129",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint32_$",
                                       "typeString": "function (uint256) pure returns (uint32)"
                                     }
                                   },
-                                  "id": 18821,
+                                  "id": 18850,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -1993,7 +1993,7 @@
                                   "lValueRequested": false,
                                   "names": [],
                                   "nodeType": "FunctionCall",
-                                  "src": "2462:31:128",
+                                  "src": "2528:31:129",
                                   "tryCall": false,
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint32",
@@ -2003,12 +2003,12 @@
                                 {
                                   "arguments": [
                                     {
-                                      "id": 18824,
+                                      "id": 18853,
                                       "name": "value",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 18763,
-                                      "src": "2522:5:128",
+                                      "referencedDeclaration": 18792,
+                                      "src": "2588:5:129",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_uint256",
                                         "typeString": "uint256"
@@ -2023,32 +2023,32 @@
                                       }
                                     ],
                                     "expression": {
-                                      "id": 18822,
+                                      "id": 18851,
                                       "name": "SafeCast",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 21587,
-                                      "src": "2503:8:128",
+                                      "referencedDeclaration": 21616,
+                                      "src": "2569:8:129",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_SafeCast_$21587_$",
+                                        "typeIdentifier": "t_type$_t_contract$_SafeCast_$21616_$",
                                         "typeString": "type(library SafeCast)"
                                       }
                                     },
-                                    "id": 18823,
+                                    "id": 18852,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "toUint224",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 21222,
-                                    "src": "2503:18:128",
+                                    "referencedDeclaration": 21251,
+                                    "src": "2569:18:129",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint224_$",
                                       "typeString": "function (uint256) pure returns (uint224)"
                                     }
                                   },
-                                  "id": 18825,
+                                  "id": 18854,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -2056,7 +2056,7 @@
                                   "lValueRequested": false,
                                   "names": [],
                                   "nodeType": "FunctionCall",
-                                  "src": "2503:25:128",
+                                  "src": "2569:25:129",
                                   "tryCall": false,
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint224",
@@ -2075,18 +2075,18 @@
                                     "typeString": "uint224"
                                   }
                                 ],
-                                "id": 18816,
+                                "id": 18845,
                                 "name": "Checkpoint",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18647,
-                                "src": "2436:10:128",
+                                "referencedDeclaration": 18676,
+                                "src": "2502:10:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_struct$_Checkpoint_$18647_storage_ptr_$",
+                                  "typeIdentifier": "t_type$_t_struct$_Checkpoint_$18676_storage_ptr_$",
                                   "typeString": "type(struct Checkpoints.Checkpoint storage pointer)"
                                 }
                               },
-                              "id": 18826,
+                              "id": 18855,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2097,10 +2097,10 @@
                                 "_value"
                               ],
                               "nodeType": "FunctionCall",
-                              "src": "2436:94:128",
+                              "src": "2502:94:129",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Checkpoint_$18647_memory_ptr",
+                                "typeIdentifier": "t_struct$_Checkpoint_$18676_memory_ptr",
                                 "typeString": "struct Checkpoints.Checkpoint memory"
                               }
                             }
@@ -2108,51 +2108,51 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_struct$_Checkpoint_$18647_memory_ptr",
+                                "typeIdentifier": "t_struct$_Checkpoint_$18676_memory_ptr",
                                 "typeString": "struct Checkpoints.Checkpoint memory"
                               }
                             ],
                             "expression": {
                               "expression": {
-                                "id": 18811,
+                                "id": 18840,
                                 "name": "self",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18761,
-                                "src": "2396:4:128",
+                                "referencedDeclaration": 18790,
+                                "src": "2461:4:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                  "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                   "typeString": "struct Checkpoints.History storage pointer"
                                 }
                               },
-                              "id": 18814,
+                              "id": 18843,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "_checkpoints",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 18651,
-                              "src": "2396:17:128",
+                              "referencedDeclaration": 18680,
+                              "src": "2461:17:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                                "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                                 "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                               }
                             },
-                            "id": 18815,
+                            "id": 18844,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "push",
                             "nodeType": "MemberAccess",
-                            "src": "2396:22:128",
+                            "src": "2461:22:129",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage_ptr_$_t_struct$_Checkpoint_$18647_storage_$returns$__$bound_to$_t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage_ptr_$",
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage_ptr_$_t_struct$_Checkpoint_$18676_storage_$returns$__$bound_to$_t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage_ptr_$",
                               "typeString": "function (struct Checkpoints.Checkpoint storage ref[] storage pointer,struct Checkpoints.Checkpoint storage ref)"
                             }
                           },
-                          "id": 18827,
+                          "id": 18856,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2160,30 +2160,30 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "2396:148:128",
+                          "src": "2461:150:129",
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_tuple$__$",
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 18828,
+                        "id": 18857,
                         "nodeType": "ExpressionStatement",
-                        "src": "2396:148:128"
+                        "src": "2461:150:129"
                       }
                     ]
                   },
-                  "id": 18830,
+                  "id": 18859,
                   "nodeType": "IfStatement",
-                  "src": "2218:337:128",
+                  "src": "2280:343:129",
                   "trueBody": {
-                    "id": 18810,
+                    "id": 18839,
                     "nodeType": "Block",
-                    "src": "2290:86:128",
+                    "src": "2352:88:129",
                     "statements": [
                       {
                         "expression": {
-                          "id": 18808,
+                          "id": 18837,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2192,49 +2192,49 @@
                             "expression": {
                               "baseExpression": {
                                 "expression": {
-                                  "id": 18796,
+                                  "id": 18825,
                                   "name": "self",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18761,
-                                  "src": "2304:4:128",
+                                  "referencedDeclaration": 18790,
+                                  "src": "2367:4:129",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                     "typeString": "struct Checkpoints.History storage pointer"
                                   }
                                 },
-                                "id": 18801,
+                                "id": 18830,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "_checkpoints",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 18651,
-                                "src": "2304:17:128",
+                                "referencedDeclaration": 18680,
+                                "src": "2367:17:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18647_storage_$dyn_storage",
+                                  "typeIdentifier": "t_array$_t_struct$_Checkpoint_$18676_storage_$dyn_storage",
                                   "typeString": "struct Checkpoints.Checkpoint storage ref[] storage ref"
                                 }
                               },
-                              "id": 18802,
+                              "id": 18831,
                               "indexExpression": {
                                 "commonType": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 },
-                                "id": 18800,
+                                "id": 18829,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftExpression": {
-                                  "id": 18798,
+                                  "id": 18827,
                                   "name": "pos",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18771,
-                                  "src": "2322:3:128",
+                                  "referencedDeclaration": 18800,
+                                  "src": "2385:3:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
                                     "typeString": "uint256"
@@ -2244,21 +2244,21 @@
                                 "operator": "-",
                                 "rightExpression": {
                                   "hexValue": "31",
-                                  "id": 18799,
+                                  "id": 18828,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
                                   "kind": "number",
                                   "lValueRequested": false,
                                   "nodeType": "Literal",
-                                  "src": "2328:1:128",
+                                  "src": "2391:1:129",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_rational_1_by_1",
                                     "typeString": "int_const 1"
                                   },
                                   "value": "1"
                                 },
-                                "src": "2322:7:128",
+                                "src": "2385:7:129",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -2269,21 +2269,21 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "2304:26:128",
+                              "src": "2367:26:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Checkpoint_$18647_storage",
+                                "typeIdentifier": "t_struct$_Checkpoint_$18676_storage",
                                 "typeString": "struct Checkpoints.Checkpoint storage ref"
                               }
                             },
-                            "id": 18803,
+                            "id": 18832,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "_value",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18646,
-                            "src": "2304:33:128",
+                            "referencedDeclaration": 18675,
+                            "src": "2367:33:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint224",
                               "typeString": "uint224"
@@ -2294,12 +2294,12 @@
                           "rightHandSide": {
                             "arguments": [
                               {
-                                "id": 18806,
+                                "id": 18835,
                                 "name": "value",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18763,
-                                "src": "2359:5:128",
+                                "referencedDeclaration": 18792,
+                                "src": "2422:5:129",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -2314,32 +2314,32 @@
                                 }
                               ],
                               "expression": {
-                                "id": 18804,
+                                "id": 18833,
                                 "name": "SafeCast",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 21587,
-                                "src": "2340:8:128",
+                                "referencedDeclaration": 21616,
+                                "src": "2403:8:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_SafeCast_$21587_$",
+                                  "typeIdentifier": "t_type$_t_contract$_SafeCast_$21616_$",
                                   "typeString": "type(library SafeCast)"
                                 }
                               },
-                              "id": 18805,
+                              "id": 18834,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "toUint224",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 21222,
-                              "src": "2340:18:128",
+                              "referencedDeclaration": 21251,
+                              "src": "2403:18:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint224_$",
                                 "typeString": "function (uint256) pure returns (uint224)"
                               }
                             },
-                            "id": 18807,
+                            "id": 18836,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2347,22 +2347,22 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "2340:25:128",
+                            "src": "2403:25:129",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint224",
                               "typeString": "uint224"
                             }
                           },
-                          "src": "2304:61:128",
+                          "src": "2367:61:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint224",
                             "typeString": "uint224"
                           }
                         },
-                        "id": 18809,
+                        "id": 18838,
                         "nodeType": "ExpressionStatement",
-                        "src": "2304:61:128"
+                        "src": "2367:61:129"
                       }
                     ]
                   }
@@ -2371,96 +2371,96 @@
                   "expression": {
                     "components": [
                       {
-                        "id": 18831,
+                        "id": 18860,
                         "name": "old",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18777,
-                        "src": "2572:3:128",
+                        "referencedDeclaration": 18806,
+                        "src": "2641:3:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
                       {
-                        "id": 18832,
+                        "id": 18861,
                         "name": "value",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18763,
-                        "src": "2577:5:128",
+                        "referencedDeclaration": 18792,
+                        "src": "2646:5:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       }
                     ],
-                    "id": 18833,
+                    "id": 18862,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "TupleExpression",
-                    "src": "2571:12:128",
+                    "src": "2640:12:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$_t_uint256_$_t_uint256_$",
                       "typeString": "tuple(uint256,uint256)"
                     }
                   },
-                  "functionReturnParameters": 18769,
-                  "id": 18834,
+                  "functionReturnParameters": 18798,
+                  "id": 18863,
                   "nodeType": "Return",
-                  "src": "2564:19:128"
+                  "src": "2633:19:129"
                 }
               ]
             },
             "documentation": {
-              "id": 18758,
+              "id": 18787,
               "nodeType": "StructuredDocumentation",
-              "src": "1865:167:128",
+              "src": "1919:171:129",
               "text": " @dev Pushes a value onto a History so that it is stored as the checkpoint for the current block.\n Returns previous value and new value."
             },
-            "id": 18836,
+            "id": 18865,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "push",
-            "nameLocation": "2046:4:128",
+            "nameLocation": "2105:4:129",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 18764,
+              "id": 18793,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18761,
+                  "id": 18790,
                   "mutability": "mutable",
                   "name": "self",
-                  "nameLocation": "2067:4:128",
+                  "nameLocation": "2126:4:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18836,
-                  "src": "2051:20:128",
+                  "scope": 18865,
+                  "src": "2110:20:129",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                     "typeString": "struct Checkpoints.History"
                   },
                   "typeName": {
-                    "id": 18760,
+                    "id": 18789,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18759,
+                      "id": 18788,
                       "name": "History",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18652,
-                      "src": "2051:7:128"
+                      "referencedDeclaration": 18681,
+                      "src": "2110:7:129"
                     },
-                    "referencedDeclaration": 18652,
-                    "src": "2051:7:128",
+                    "referencedDeclaration": 18681,
+                    "src": "2110:7:129",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                      "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                       "typeString": "struct Checkpoints.History"
                     }
                   },
@@ -2468,13 +2468,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18763,
+                  "id": 18792,
                   "mutability": "mutable",
                   "name": "value",
-                  "nameLocation": "2081:5:128",
+                  "nameLocation": "2140:5:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18836,
-                  "src": "2073:13:128",
+                  "scope": 18865,
+                  "src": "2132:13:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2482,10 +2482,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18762,
+                    "id": 18791,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2073:7:128",
+                    "src": "2132:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2494,21 +2494,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2050:37:128"
+              "src": "2109:37:129"
             },
             "returnParameters": {
-              "id": 18769,
+              "id": 18798,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18766,
+                  "id": 18795,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18836,
-                  "src": "2106:7:128",
+                  "scope": 18865,
+                  "src": "2165:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2516,10 +2516,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18765,
+                    "id": 18794,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2106:7:128",
+                    "src": "2165:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2529,13 +2529,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18768,
+                  "id": 18797,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18836,
-                  "src": "2115:7:128",
+                  "scope": 18865,
+                  "src": "2174:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2543,10 +2543,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18767,
+                    "id": 18796,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2115:7:128",
+                    "src": "2174:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2555,32 +2555,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2105:18:128"
+              "src": "2164:18:129"
             },
-            "scope": 18871,
-            "src": "2037:553:128",
+            "scope": 18900,
+            "src": "2096:564:129",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 18869,
+              "id": 18898,
               "nodeType": "Block",
-              "src": "2993:59:128",
+              "src": "3075:61:129",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 18860,
+                        "id": 18889,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18840,
-                        "src": "3015:4:128",
+                        "referencedDeclaration": 18869,
+                        "src": "3098:4:129",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         }
                       },
@@ -2589,14 +2589,14 @@
                           {
                             "arguments": [
                               {
-                                "id": 18863,
+                                "id": 18892,
                                 "name": "self",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18840,
-                                "src": "3031:4:128",
+                                "referencedDeclaration": 18869,
+                                "src": "3114:4:129",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                  "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                   "typeString": "struct Checkpoints.History storage pointer"
                                 }
                               }
@@ -2604,22 +2604,22 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                                  "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                                   "typeString": "struct Checkpoints.History storage pointer"
                                 }
                               ],
-                              "id": 18862,
+                              "id": 18891,
                               "name": "latest",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18681,
-                              "src": "3024:6:128",
+                              "referencedDeclaration": 18710,
+                              "src": "3107:6:129",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_function_internal_view$_t_struct$_History_$18652_storage_ptr_$returns$_t_uint256_$",
+                                "typeIdentifier": "t_function_internal_view$_t_struct$_History_$18681_storage_ptr_$returns$_t_uint256_$",
                                 "typeString": "function (struct Checkpoints.History storage pointer) view returns (uint256)"
                               }
                             },
-                            "id": 18864,
+                            "id": 18893,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2627,7 +2627,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "3024:12:128",
+                            "src": "3107:12:129",
                             "tryCall": false,
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2635,12 +2635,12 @@
                             }
                           },
                           {
-                            "id": 18865,
+                            "id": 18894,
                             "name": "delta",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18852,
-                            "src": "3038:5:128",
+                            "referencedDeclaration": 18881,
+                            "src": "3121:5:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2658,18 +2658,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 18861,
+                          "id": 18890,
                           "name": "op",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18850,
-                          "src": "3021:2:128",
+                          "referencedDeclaration": 18879,
+                          "src": "3104:2:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
                             "typeString": "function (uint256,uint256) view returns (uint256)"
                           }
                         },
-                        "id": 18866,
+                        "id": 18895,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2677,7 +2677,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "3021:23:128",
+                        "src": "3104:23:129",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2688,7 +2688,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                          "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                           "typeString": "struct Checkpoints.History storage pointer"
                         },
                         {
@@ -2696,21 +2696,21 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 18859,
+                      "id": 18888,
                       "name": "push",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18836,
-                        18870
+                        18865,
+                        18899
                       ],
-                      "referencedDeclaration": 18836,
-                      "src": "3010:4:128",
+                      "referencedDeclaration": 18865,
+                      "src": "3093:4:129",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_History_$18652_storage_ptr_$_t_uint256_$returns$_t_uint256_$_t_uint256_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_History_$18681_storage_ptr_$_t_uint256_$returns$_t_uint256_$_t_uint256_$",
                         "typeString": "function (struct Checkpoints.History storage pointer,uint256) returns (uint256,uint256)"
                       }
                     },
-                    "id": 18867,
+                    "id": 18896,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2718,66 +2718,66 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "3010:35:128",
+                    "src": "3093:35:129",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$_t_uint256_$_t_uint256_$",
                       "typeString": "tuple(uint256,uint256)"
                     }
                   },
-                  "functionReturnParameters": 18858,
-                  "id": 18868,
+                  "functionReturnParameters": 18887,
+                  "id": 18897,
                   "nodeType": "Return",
-                  "src": "3003:42:128"
+                  "src": "3086:42:129"
                 }
               ]
             },
             "documentation": {
-              "id": 18837,
+              "id": 18866,
               "nodeType": "StructuredDocumentation",
-              "src": "2596:221:128",
+              "src": "2668:226:129",
               "text": " @dev Pushes a value onto a History, by updating the latest value using binary operation `op`. The new value will\n be set to `op(latest, delta)`.\n Returns previous value and new value."
             },
-            "id": 18870,
+            "id": 18899,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "push",
-            "nameLocation": "2831:4:128",
+            "nameLocation": "2909:4:129",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 18853,
+              "id": 18882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18840,
+                  "id": 18869,
                   "mutability": "mutable",
                   "name": "self",
-                  "nameLocation": "2861:4:128",
+                  "nameLocation": "2940:4:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18870,
-                  "src": "2845:20:128",
+                  "scope": 18899,
+                  "src": "2924:20:129",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                    "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                     "typeString": "struct Checkpoints.History"
                   },
                   "typeName": {
-                    "id": 18839,
+                    "id": 18868,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 18838,
+                      "id": 18867,
                       "name": "History",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 18652,
-                      "src": "2845:7:128"
+                      "referencedDeclaration": 18681,
+                      "src": "2924:7:129"
                     },
-                    "referencedDeclaration": 18652,
-                    "src": "2845:7:128",
+                    "referencedDeclaration": 18681,
+                    "src": "2924:7:129",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_History_$18652_storage_ptr",
+                      "typeIdentifier": "t_struct$_History_$18681_storage_ptr",
                       "typeString": "struct Checkpoints.History"
                     }
                   },
@@ -2785,13 +2785,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18850,
+                  "id": 18879,
                   "mutability": "mutable",
                   "name": "op",
-                  "nameLocation": "2925:2:128",
+                  "nameLocation": "3005:2:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18870,
-                  "src": "2875:52:128",
+                  "scope": 18899,
+                  "src": "2955:52:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2799,21 +2799,21 @@
                     "typeString": "function (uint256,uint256) view returns (uint256)"
                   },
                   "typeName": {
-                    "id": 18849,
+                    "id": 18878,
                     "nodeType": "FunctionTypeName",
                     "parameterTypes": {
-                      "id": 18845,
+                      "id": 18874,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 18842,
+                          "id": 18871,
                           "mutability": "mutable",
                           "name": "",
                           "nameLocation": "-1:-1:-1",
                           "nodeType": "VariableDeclaration",
-                          "scope": 18849,
-                          "src": "2884:7:128",
+                          "scope": 18878,
+                          "src": "2964:7:129",
                           "stateVariable": false,
                           "storageLocation": "default",
                           "typeDescriptions": {
@@ -2821,10 +2821,10 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 18841,
+                            "id": 18870,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
-                            "src": "2884:7:128",
+                            "src": "2964:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2834,13 +2834,13 @@
                         },
                         {
                           "constant": false,
-                          "id": 18844,
+                          "id": 18873,
                           "mutability": "mutable",
                           "name": "",
                           "nameLocation": "-1:-1:-1",
                           "nodeType": "VariableDeclaration",
-                          "scope": 18849,
-                          "src": "2893:7:128",
+                          "scope": 18878,
+                          "src": "2973:7:129",
                           "stateVariable": false,
                           "storageLocation": "default",
                           "typeDescriptions": {
@@ -2848,10 +2848,10 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 18843,
+                            "id": 18872,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
-                            "src": "2893:7:128",
+                            "src": "2973:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2860,21 +2860,21 @@
                           "visibility": "internal"
                         }
                       ],
-                      "src": "2883:18:128"
+                      "src": "2963:18:129"
                     },
                     "returnParameterTypes": {
-                      "id": 18848,
+                      "id": 18877,
                       "nodeType": "ParameterList",
                       "parameters": [
                         {
                           "constant": false,
-                          "id": 18847,
+                          "id": 18876,
                           "mutability": "mutable",
                           "name": "",
                           "nameLocation": "-1:-1:-1",
                           "nodeType": "VariableDeclaration",
-                          "scope": 18849,
-                          "src": "2916:7:128",
+                          "scope": 18878,
+                          "src": "2996:7:129",
                           "stateVariable": false,
                           "storageLocation": "default",
                           "typeDescriptions": {
@@ -2882,10 +2882,10 @@
                             "typeString": "uint256"
                           },
                           "typeName": {
-                            "id": 18846,
+                            "id": 18875,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
-                            "src": "2916:7:128",
+                            "src": "2996:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2894,9 +2894,9 @@
                           "visibility": "internal"
                         }
                       ],
-                      "src": "2915:9:128"
+                      "src": "2995:9:129"
                     },
-                    "src": "2875:52:128",
+                    "src": "2955:52:129",
                     "stateMutability": "view",
                     "typeDescriptions": {
                       "typeIdentifier": "t_function_internal_view$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
@@ -2908,13 +2908,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18852,
+                  "id": 18881,
                   "mutability": "mutable",
                   "name": "delta",
-                  "nameLocation": "2945:5:128",
+                  "nameLocation": "3026:5:129",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18870,
-                  "src": "2937:13:128",
+                  "scope": 18899,
+                  "src": "3018:13:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2922,10 +2922,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18851,
+                    "id": 18880,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2937:7:128",
+                    "src": "3018:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2934,21 +2934,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2835:121:128"
+              "src": "2913:125:129"
             },
             "returnParameters": {
-              "id": 18858,
+              "id": 18887,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 18855,
+                  "id": 18884,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18870,
-                  "src": "2975:7:128",
+                  "scope": 18899,
+                  "src": "3057:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2956,10 +2956,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18854,
+                    "id": 18883,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2975:7:128",
+                    "src": "3057:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2969,13 +2969,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 18857,
+                  "id": 18886,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 18870,
-                  "src": "2984:7:128",
+                  "scope": 18899,
+                  "src": "3066:7:129",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2983,10 +2983,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 18856,
+                    "id": 18885,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2984:7:128",
+                    "src": "3066:7:129",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2995,21 +2995,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2974:18:128"
+              "src": "3056:18:129"
             },
-            "scope": 18871,
-            "src": "2822:230:128",
+            "scope": 18900,
+            "src": "2900:236:129",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 18872,
-        "src": "619:2435:128",
+        "scope": 18901,
+        "src": "635:2504:129",
         "usedErrors": []
       }
     ],
-    "src": "104:2951:128"
+    "src": "106:3035:129"
   },
   "compiler": {
     "name": "solc",
@@ -3017,7 +3017,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-05T20:32:07.750Z",
+  "updatedAt": "2022-05-08T19:09:20.875Z",
   "devdoc": {
     "details": "This library defines the `History` struct, for checkpointing values as they change at different points in time, and later looking up past values by block number. See {Votes} as an example. To create a history of checkpoints define a variable type `Checkpoints.History` in your contract, and store a new checkpoint for the current transaction block using the {push} function. _Available since v4.5._",
     "kind": "dev",

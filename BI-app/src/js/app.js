@@ -158,6 +158,40 @@ App = {
 });
 
   },
+
+  handlebuy:function(val, adress, price){
+	debugger
+	var registerInstance;
+	web3.eth.getAccounts(function(error, accounts) {
+	var account = accounts[0];
+	App.contracts.BI.deployed().then(function(instance) {
+	registerInstance = instance;
+	console.log(x)
+	let price = 0;
+	for (var i = 0; i < x.length; ++i) {
+		if(x[i].prodID == val) {
+			price = x[i].price;
+			break;
+		}
+	}
+	console.log(price);
+	return registerInstance.buyProducts(val, adress, price,{from: account}).then((result)=>{
+		
+		console.log(result)
+		
+		if(result){
+            if(result.receipt.status == true){
+            alert("Item Bought Successfully")
+			}
+        }  
+	})
+
+});
+});
+
+  
+  },
+
   handleProducts:function(){
 
 
@@ -181,6 +215,8 @@ App = {
 				+ "<br></br> Description of Product: " +  result[i]['description'].toString()  + "<br></br> price of Product: " +  result[i]['price'].toString() + "<br></br>"
 				);
 
+
+
 				console.log(image)
 				if(parseInt(result[i].prodID, 10) in image){
 					const data = document.createElement('img')
@@ -191,7 +227,16 @@ App = {
 					data.height = "400"
 					console.log(data)
 					jQuery("#getproducts").append(data)	
+					// const a = document.createElement('button')
+					// a.innerHTML = "Buy"
 				}
+
+				const a = document.createElement('button')
+				a.innerHTML = "Buy"
+				jQuery("#getproducts").append(a)
+				a.addEventListener("click", App.handlebuy.bind(this, result[i]['prodID'], result[i]['owner'], result[i]['price']))
+				a.classList.add('btn', 'btn-primary', 'button-test')
+	
 			} 
 			
 			// jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
@@ -256,38 +301,38 @@ App = {
 
 
 
-  handlebuy:function(val, adress, price){
+//   handlebuy:function(val, adress, price){
 
-	var registerInstance;
-	web3.eth.getAccounts(function(error, accounts) {
-	var account = accounts[0];
-	App.contracts.BI.deployed().then(function(instance) {
-	registerInstance = instance;
-	console.log(x)
-	let price = 0;
-	for (var i = 0; i < x.length; ++i) {
-		if(x[i].prodID == val) {
-			price = x[i].price;
-			break;
-		}
-	}
-	console.log(price);
-	return registerInstance.buyProducts(val, adress, price,{from: account}).then((result)=>{
+// 	var registerInstance;
+// 	web3.eth.getAccounts(function(error, accounts) {
+// 	var account = accounts[0];
+// 	App.contracts.BI.deployed().then(function(instance) {
+// 	registerInstance = instance;
+// 	console.log(x)
+// 	let price = 0;
+// 	for (var i = 0; i < x.length; ++i) {
+// 		if(x[i].prodID == val) {
+// 			price = x[i].price;
+// 			break;
+// 		}
+// 	}
+// 	console.log(price);
+// 	return registerInstance.buyProducts(val, adress, price,{from: account}).then((result)=>{
 		
-		console.log(result)
+// 		console.log(result)
 		
-		if(result){
-            if(result.receipt.status == true){
-            alert("Item Bought Successfully")
-			}
-        }  
-	})
+// 		if(result){
+//             if(result.receipt.status == true){
+//             alert("Item Bought Successfully")
+// 			}
+//         }  
+// 	})
 
-});
-});
+// });
+// });
 
   
-  },
+//   },
   handlesell:function(id, owner, cost, desc){
 	  var x = document.getElementById("url").value;
 	  image[id] = x;

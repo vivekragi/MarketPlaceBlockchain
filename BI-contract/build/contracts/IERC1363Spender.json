@@ -31,7 +31,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onApprovalReceived\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"onApprovalReceived(address,uint256,bytes)\":{\"details\":\"Any ERC1363 smart contract calls this function on the recipient after an `approve`. This function MAY throw to revert and reject the approval. Return of other than the magic value MUST result in the transaction being reverted. Note: the token contract address is always the message sender.\",\"params\":{\"data\":\"bytes Additional data with no specified format\",\"owner\":\"address The address which called `approveAndCall` function\",\"value\":\"uint256 The amount of tokens to be spent\"},\"returns\":{\"_0\":\"`bytes4(keccak256(\\\"onApprovalReceived(address,uint256,bytes)\\\"))`  unless throwing\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"onApprovalReceived(address,uint256,bytes)\":{\"notice\":\"Handle the approval of ERC1363 tokens\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IERC1363Spender.sol\":\"IERC1363Spender\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC1363Spender.sol\":{\"keccak256\":\"0x64051f64615addb4c98fa379d4b70c6b7ddb038345a84c6a2bb56b966fd0a966\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7b08ae60e259d1ef49728e9a766ed79339e92baf7df6417f900e418d8b21aef8\",\"dweb:/ipfs/QmZhYy3a3BVFZvDpc8DXvtC6Po8NGyz53ygHRq3rP1ZXJp\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onApprovalReceived\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"onApprovalReceived(address,uint256,bytes)\":{\"details\":\"Any ERC1363 smart contract calls this function on the recipient after an `approve`. This function MAY throw to revert and reject the approval. Return of other than the magic value MUST result in the transaction being reverted. Note: the token contract address is always the message sender.\",\"params\":{\"data\":\"bytes Additional data with no specified format\",\"owner\":\"address The address which called `approveAndCall` function\",\"value\":\"uint256 The amount of tokens to be spent\"},\"returns\":{\"_0\":\"`bytes4(keccak256(\\\"onApprovalReceived(address,uint256,bytes)\\\"))`  unless throwing\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"onApprovalReceived(address,uint256,bytes)\":{\"notice\":\"Handle the approval of ERC1363 tokens\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IERC1363Spender.sol\":\"IERC1363Spender\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC1363Spender.sol\":{\"keccak256\":\"0xf50c171a0fea83494fc2858685da0a14c52b1d061db53147e5f1a0ead8dfef32\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://de11b187435a8a5e54aea5bf2726b8df18dec91d634a41c0c974577ab36509f4\",\"dweb:/ipfs/QmNpamYGpsSg26XFrVRJmAAocE1CxNZKSzFhRanEKDUZFk\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -39,21 +39,21 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n// OpenZeppelin Contracts v4.4.1 (interfaces/IERC1363Spender.sol)\n\npragma solidity ^0.8.0;\n\ninterface IERC1363Spender {\n    /*\n     * Note: the ERC-165 identifier for this interface is 0x7b04a2d0.\n     * 0x7b04a2d0 === bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))\n     */\n\n    /**\n     * @notice Handle the approval of ERC1363 tokens\n     * @dev Any ERC1363 smart contract calls this function on the recipient\n     * after an `approve`. This function MAY throw to revert and reject the\n     * approval. Return of other than the magic value MUST result in the\n     * transaction being reverted.\n     * Note: the token contract address is always the message sender.\n     * @param owner address The address which called `approveAndCall` function\n     * @param value uint256 The amount of tokens to be spent\n     * @param data bytes Additional data with no specified format\n     * @return `bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))`\n     *  unless throwing\n     */\n    function onApprovalReceived(\n        address owner,\n        uint256 value,\n        bytes memory data\n    ) external returns (bytes4);\n}\n",
-  "sourcePath": "/Users/vivekreddy/Documents/Spring2022/Blockchain/Code/BI_Final/BI-contract/contracts/interfaces/IERC1363Spender.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n// OpenZeppelin Contracts v4.4.1 (interfaces/IERC1363Spender.sol)\r\n\r\npragma solidity ^0.8.0;\r\n\r\ninterface IERC1363Spender {\r\n    /*\r\n     * Note: the ERC-165 identifier for this interface is 0x7b04a2d0.\r\n     * 0x7b04a2d0 === bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))\r\n     */\r\n\r\n    /**\r\n     * @notice Handle the approval of ERC1363 tokens\r\n     * @dev Any ERC1363 smart contract calls this function on the recipient\r\n     * after an `approve`. This function MAY throw to revert and reject the\r\n     * approval. Return of other than the magic value MUST result in the\r\n     * transaction being reverted.\r\n     * Note: the token contract address is always the message sender.\r\n     * @param owner address The address which called `approveAndCall` function\r\n     * @param value uint256 The amount of tokens to be spent\r\n     * @param data bytes Additional data with no specified format\r\n     * @return `bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))`\r\n     *  unless throwing\r\n     */\r\n    function onApprovalReceived(\r\n        address owner,\r\n        uint256 value,\r\n        bytes memory data\r\n    ) external returns (bytes4);\r\n}\r\n",
+  "sourcePath": "C:\\Kshitij\\UBSem2\\CSE 526 - Blockchain\\Project\\Phase3\\MarketPlaceBlockchain\\BI-contract\\contracts\\interfaces\\IERC1363Spender.sol",
   "ast": {
     "absolutePath": "project:/contracts/interfaces/IERC1363Spender.sol",
     "exportedSymbols": {
       "IERC1363Spender": [
-        8317
+        8346
       ]
     },
-    "id": 8318,
+    "id": 8347,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8304,
+        "id": 8333,
         "literals": [
           "solidity",
           "^",
@@ -61,7 +61,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "99:23:44"
+        "src": "102:23:45"
       },
       {
         "abstract": false,
@@ -69,42 +69,42 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 8317,
+        "id": 8346,
         "linearizedBaseContracts": [
-          8317
+          8346
         ],
         "name": "IERC1363Spender",
-        "nameLocation": "134:15:44",
+        "nameLocation": "139:15:45",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 8305,
+              "id": 8334,
               "nodeType": "StructuredDocumentation",
-              "src": "327:704:44",
+              "src": "338:716:45",
               "text": " @notice Handle the approval of ERC1363 tokens\n @dev Any ERC1363 smart contract calls this function on the recipient\n after an `approve`. This function MAY throw to revert and reject the\n approval. Return of other than the magic value MUST result in the\n transaction being reverted.\n Note: the token contract address is always the message sender.\n @param owner address The address which called `approveAndCall` function\n @param value uint256 The amount of tokens to be spent\n @param data bytes Additional data with no specified format\n @return `bytes4(keccak256(\"onApprovalReceived(address,uint256,bytes)\"))`\n  unless throwing"
             },
             "functionSelector": "7b04a2d0",
-            "id": 8316,
+            "id": 8345,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "onApprovalReceived",
-            "nameLocation": "1045:18:44",
+            "nameLocation": "1069:18:45",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8312,
+              "id": 8341,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8307,
+                  "id": 8336,
                   "mutability": "mutable",
                   "name": "owner",
-                  "nameLocation": "1081:5:44",
+                  "nameLocation": "1106:5:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8316,
-                  "src": "1073:13:44",
+                  "scope": 8345,
+                  "src": "1098:13:45",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -112,10 +112,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8306,
+                    "id": 8335,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1073:7:44",
+                    "src": "1098:7:45",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -126,13 +126,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 8309,
+                  "id": 8338,
                   "mutability": "mutable",
                   "name": "value",
-                  "nameLocation": "1104:5:44",
+                  "nameLocation": "1130:5:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8316,
-                  "src": "1096:13:44",
+                  "scope": 8345,
+                  "src": "1122:13:45",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -140,10 +140,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 8308,
+                    "id": 8337,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1096:7:44",
+                    "src": "1122:7:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -153,13 +153,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 8311,
+                  "id": 8340,
                   "mutability": "mutable",
                   "name": "data",
-                  "nameLocation": "1132:4:44",
+                  "nameLocation": "1159:4:45",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8316,
-                  "src": "1119:17:44",
+                  "scope": 8345,
+                  "src": "1146:17:45",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -167,10 +167,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 8310,
+                    "id": 8339,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1119:5:44",
+                    "src": "1146:5:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -179,21 +179,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1063:79:44"
+              "src": "1087:83:45"
             },
             "returnParameters": {
-              "id": 8315,
+              "id": 8344,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8314,
+                  "id": 8343,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8316,
-                  "src": "1161:6:44",
+                  "scope": 8345,
+                  "src": "1189:6:45",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -201,10 +201,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 8313,
+                    "id": 8342,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1161:6:44",
+                    "src": "1189:6:45",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -213,21 +213,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1160:8:44"
+              "src": "1188:8:45"
             },
-            "scope": 8317,
-            "src": "1036:133:44",
+            "scope": 8346,
+            "src": "1060:137:45",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 8318,
-        "src": "124:1047:44",
+        "scope": 8347,
+        "src": "129:1071:45",
         "usedErrors": []
       }
     ],
-    "src": "99:1073:44"
+    "src": "102:1100:45"
   },
   "compiler": {
     "name": "solc",
@@ -235,7 +235,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-05T20:32:07.590Z",
+  "updatedAt": "2022-05-08T19:09:20.670Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

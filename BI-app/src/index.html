@@ -52,12 +52,12 @@
       <div class="row" style="margin:5vw">
         <div class="col-md-2"></div>
         <div class="col-md-4">
-          <input id = "buyamt" type="text">
+          <input id = "buyamt" type="text" placeholder="Enter no. of tokens required">
           <button id="registerbuy" class="btn btn-primary button-test" type="button">Register as Buyer</button>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4">
-          <input id = "sellamt" type="text">
+          <input id = "sellamt" type="text" placeholder="Enter no. of tokens required">
           <button id="registersell" class="btn btn-primary button-test" type="button">Register as Seller</button>
           
         </div>
@@ -72,8 +72,8 @@
         
         <div class = "col-md-7">
           <div class = "card" style="margin:5vw">
-            <input id = "bal" type="text">
-          <button id="buyerbalance" class="btn btn-primary button-test" type="button">Get Balance</button>
+            <input id = "bal" type="text" placeholder="Enter account number here">
+          <button id="Account balance" class="btn btn-primary button-test" type="button">Get Balance</button>
         <p id="getbuyerbalance"></p>
   
         <button id="products" class="btn btn-primary button-test" type="button">See Productinfo</button>
@@ -86,7 +86,7 @@
         <div id="gettransferredproducts"></div>
         </div>
       </div>
-        <div class="col-md-5">
+        <!-- <div class="col-md-5">
           <div class="card" style = margin-left:10vw;margin-right:10vw>
             <div class="card-header">
               <h1 class="card-header">Buy Items</h1>
@@ -119,7 +119,7 @@
               <p id="successfullbuy"></p>
             </form>
             </div>
-          </div>
+          </div> -->
         </div>
         
       </div>
@@ -175,6 +175,12 @@
         </div>
       </div>
    </div>
+   <br>
+   <center>
+    <input id = "addr" type="text" placeholder="Enter account number here">
+    <button id="unregister" class="btn btn-primary button-test" type="button">Unregister (only chairperson)</button>
+   </center>
+
 </body>
 
 </html>

@@ -314,7 +314,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"accounts\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface of the optional ERC1155MetadataExtension interface, as defined in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP]. _Available since v3.1._\",\"kind\":\"dev\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"Returns the amount of tokens of token type `id` owned by `account`. Requirements: - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}. Requirements: - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns true if `operator` is approved to transfer ``account``'s tokens. See {setApprovalForAll}.\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {safeTransferFrom}. Emits a {TransferBatch} event. Requirements: - `ids` and `amounts` must have the same length. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155BatchReceived} and return the acceptance magic value.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"Transfers `amount` tokens of token type `id` from `from` to `to`. Emits a {TransferSingle} event. Requirements: - `to` cannot be the zero address. - If the caller is not `from`, it must be have been approved to spend ``from``'s tokens via {setApprovalForAll}. - `from` must have a balance of tokens of type `id` of at least `amount`. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the acceptance magic value.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Grants or revokes permission to `operator` to transfer the caller's tokens, according to `approved`, Emits an {ApprovalForAll} event. Requirements: - `operator` cannot be the caller.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"uri(uint256)\":{\"details\":\"Returns the URI for token type `id`. If the `\\\\{id\\\\}` substring is present in the URI, it must be replaced by clients with the actual token type ID.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":\"IERC1155MetadataURI\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x8e93de94c9062ebc94fb7e2e3929b0781ac6a2b7772e2f7a59045861c93e5be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f920a631bf986c610fe573d3c70a2bb6f224f86f4a8550016470c7ee476c9ab5\",\"dweb:/ipfs/QmYzsyVMfnaREKHcHv5RPS8Xg5r1Q38E2SDsGBTnXeFWzb\"]},\"project:/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0xa66d18b9a85458d28fc3304717964502ae36f7f8a2ff35bc83f6f85d74b03574\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e46c80ea068989111d6103e5521223f9ef337e93de76deed8b03f75c6f7b2797\",\"dweb:/ipfs/QmNoSE6knNfFncdDDLTb3fGR6oSQty1srG96Vsx3E9wQdw\"]},\"project:/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"accounts\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Interface of the optional ERC1155MetadataExtension interface, as defined in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP]. _Available since v3.1._\",\"kind\":\"dev\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"Returns the amount of tokens of token type `id` owned by `account`. Requirements: - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}. Requirements: - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns true if `operator` is approved to transfer ``account``'s tokens. See {setApprovalForAll}.\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {safeTransferFrom}. Emits a {TransferBatch} event. Requirements: - `ids` and `amounts` must have the same length. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155BatchReceived} and return the acceptance magic value.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"Transfers `amount` tokens of token type `id` from `from` to `to`. Emits a {TransferSingle} event. Requirements: - `to` cannot be the zero address. - If the caller is not `from`, it must be have been approved to spend ``from``'s tokens via {setApprovalForAll}. - `from` must have a balance of tokens of type `id` of at least `amount`. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the acceptance magic value.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Grants or revokes permission to `operator` to transfer the caller's tokens, according to `approved`, Emits an {ApprovalForAll} event. Requirements: - `operator` cannot be the caller.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"uri(uint256)\":{\"details\":\"Returns the URI for token type `id`. If the `\\\\{id\\\\}` substring is present in the URI, it must be replaced by clients with the actual token type ID.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":\"IERC1155MetadataURI\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x56929133c3d37641ae44d2fef6a4fba2c6fbc1faa1925ab777fae2e0be557bb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dba2499fc4ad87a46c98a61ac2985c8754898132d789a16310628eea494e96e8\",\"dweb:/ipfs/QmNNBSxw2tyPrZYEsbDFMQrt9ii4fCw32NobYwYTFDManz\"]},\"project:/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol\":{\"keccak256\":\"0x2d6f48f294e6e798d26a8160091e39e173f955566f5ddce18ab15766356e4930\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9b84688ab411266e9a20e63c8ae9958a3ff8a1af9d031d5d907976e1f1b8e4f7\",\"dweb:/ipfs/QmQpJ1697jCMMJ86BrkJfdJx9x7mV1gRmrywTcJoPZd7UD\"]},\"project:/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x540685d7ece3faa56f38253270ff11b18e63949fb8659c408123b1874674492e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5474839e19e2571c52eae3aab1dc6e6edf2b20bbba9895f59db6594a2678a3d5\",\"dweb:/ipfs/QmVHocBeANMkq4TzVM7q9At5NSg1TEpT9D9vgJ5dGcvcPN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -322,27 +322,27 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n// OpenZeppelin Contracts v4.4.1 (token/ERC1155/extensions/IERC1155MetadataURI.sol)\n\npragma solidity ^0.8.0;\n\nimport \"../IERC1155.sol\";\n\n/**\n * @dev Interface of the optional ERC1155MetadataExtension interface, as defined\n * in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP].\n *\n * _Available since v3.1._\n */\ninterface IERC1155MetadataURI is IERC1155 {\n    /**\n     * @dev Returns the URI for token type `id`.\n     *\n     * If the `\\{id\\}` substring is present in the URI, it must be replaced by\n     * clients with the actual token type ID.\n     */\n    function uri(uint256 id) external view returns (string memory);\n}\n",
-  "sourcePath": "/Users/vivekreddy/Documents/Spring2022/Blockchain/Code/BI_Final/BI-contract/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n// OpenZeppelin Contracts v4.4.1 (token/ERC1155/extensions/IERC1155MetadataURI.sol)\r\n\r\npragma solidity ^0.8.0;\r\n\r\nimport \"../IERC1155.sol\";\r\n\r\n/**\r\n * @dev Interface of the optional ERC1155MetadataExtension interface, as defined\r\n * in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP].\r\n *\r\n * _Available since v3.1._\r\n */\r\ninterface IERC1155MetadataURI is IERC1155 {\r\n    /**\r\n     * @dev Returns the URI for token type `id`.\r\n     *\r\n     * If the `\\{id\\}` substring is present in the URI, it must be replaced by\r\n     * clients with the actual token type ID.\r\n     */\r\n    function uri(uint256 id) external view returns (string memory);\r\n}\r\n",
+  "sourcePath": "C:\\Kshitij\\UBSem2\\CSE 526 - Blockchain\\Project\\Phase3\\MarketPlaceBlockchain\\BI-contract\\contracts\\token\\ERC1155\\extensions\\IERC1155MetadataURI.sol",
   "ast": {
     "absolutePath": "project:/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
     "exportedSymbols": {
       "IERC1155": [
-        11220
+        11249
       ],
       "IERC1155MetadataURI": [
-        11638
+        11667
       ],
       "IERC165": [
-        21002
+        21031
       ]
     },
-    "id": 11639,
+    "id": 11668,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11625,
+        "id": 11654,
         "literals": [
           "solidity",
           "^",
@@ -350,17 +350,17 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "117:23:85"
+        "src": "120:23:86"
       },
       {
         "absolutePath": "project:/contracts/token/ERC1155/IERC1155.sol",
         "file": "../IERC1155.sol",
-        "id": 11626,
+        "id": 11655,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 11639,
-        "sourceUnit": 11221,
-        "src": "142:25:85",
+        "scope": 11668,
+        "sourceUnit": 11250,
+        "src": "147:25:86",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -369,64 +369,64 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 11628,
+              "id": 11657,
               "name": "IERC1155",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 11220,
-              "src": "397:8:85"
+              "referencedDeclaration": 11249,
+              "src": "410:8:86"
             },
-            "id": 11629,
+            "id": 11658,
             "nodeType": "InheritanceSpecifier",
-            "src": "397:8:85"
+            "src": "410:8:86"
           }
         ],
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 11627,
+          "id": 11656,
           "nodeType": "StructuredDocumentation",
-          "src": "169:194:85",
+          "src": "176:199:86",
           "text": " @dev Interface of the optional ERC1155MetadataExtension interface, as defined\n in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP].\n _Available since v3.1._"
         },
         "fullyImplemented": false,
-        "id": 11638,
+        "id": 11667,
         "linearizedBaseContracts": [
-          11638,
-          11220,
-          21002
+          11667,
+          11249,
+          21031
         ],
         "name": "IERC1155MetadataURI",
-        "nameLocation": "374:19:85",
+        "nameLocation": "387:19:86",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 11630,
+              "id": 11659,
               "nodeType": "StructuredDocumentation",
-              "src": "412:192:85",
+              "src": "426:197:86",
               "text": " @dev Returns the URI for token type `id`.\n If the `\\{id\\}` substring is present in the URI, it must be replaced by\n clients with the actual token type ID."
             },
             "functionSelector": "0e89341c",
-            "id": 11637,
+            "id": 11666,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "uri",
-            "nameLocation": "618:3:85",
+            "nameLocation": "638:3:86",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11633,
+              "id": 11662,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11632,
+                  "id": 11661,
                   "mutability": "mutable",
                   "name": "id",
-                  "nameLocation": "630:2:85",
+                  "nameLocation": "650:2:86",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11637,
-                  "src": "622:10:85",
+                  "scope": 11666,
+                  "src": "642:10:86",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -434,10 +434,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11631,
+                    "id": 11660,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "622:7:85",
+                    "src": "642:7:86",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -446,21 +446,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "621:12:85"
+              "src": "641:12:86"
             },
             "returnParameters": {
-              "id": 11636,
+              "id": 11665,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11635,
+                  "id": 11664,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11637,
-                  "src": "657:13:85",
+                  "scope": 11666,
+                  "src": "677:13:86",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -468,10 +468,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 11634,
+                    "id": 11663,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "657:6:85",
+                    "src": "677:6:86",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -480,21 +480,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "656:15:85"
+              "src": "676:15:86"
             },
-            "scope": 11638,
-            "src": "609:63:85",
+            "scope": 11667,
+            "src": "629:63:86",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 11639,
-        "src": "364:310:85",
+        "scope": 11668,
+        "src": "377:318:86",
         "usedErrors": []
       }
     ],
-    "src": "117:558:85"
+    "src": "120:577:86"
   },
   "compiler": {
     "name": "solc",
@@ -502,7 +502,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-05T20:32:07.638Z",
+  "updatedAt": "2022-05-08T19:09:20.737Z",
   "devdoc": {
     "details": "Interface of the optional ERC1155MetadataExtension interface, as defined in the https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[EIP]. _Available since v3.1._",
     "kind": "dev",

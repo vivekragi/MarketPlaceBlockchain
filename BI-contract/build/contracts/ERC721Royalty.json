@@ -361,7 +361,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_salePrice\",\"type\":\"uint256\"}],\"name\":\"royaltyInfo\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment information. Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first. IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to voluntarily pay royalties together with sales, but note that this standard is not yet widely supported. _Available since v4.5._\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"See {IERC721-approve}.\"},\"balanceOf(address)\":{\"details\":\"See {IERC721-balanceOf}.\"},\"getApproved(uint256)\":{\"details\":\"See {IERC721-getApproved}.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IERC721-isApprovedForAll}.\"},\"name()\":{\"details\":\"See {IERC721Metadata-name}.\"},\"ownerOf(uint256)\":{\"details\":\"See {IERC721-ownerOf}.\"},\"royaltyInfo(uint256,uint256)\":{\"details\":\"Returns how much royalty is owed and to whom, based on a sale price that may be denominated in any unit of exchange. The royalty amount is denominated and should be paid in that same unit of exchange.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IERC721-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"symbol()\":{\"details\":\"See {IERC721Metadata-symbol}.\"},\"tokenURI(uint256)\":{\"details\":\"See {IERC721Metadata-tokenURI}.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-transferFrom}.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/ERC721/extensions/ERC721Royalty.sol\":\"ERC721Royalty\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC2981.sol\":{\"keccak256\":\"0xa812eed728198acd2c30d06950a5bea8d68436e4f694dd892273266ec2f79f5b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f5522afc5c222c810d9ad67c45f37cb7169452fcf76692cad10ac8153c068daa\",\"dweb:/ipfs/QmX4XgnDp7pyvojQ6g5tacrUMCf7TED2qC2vERH9Xh9feZ\"]},\"project:/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xcc1f848216524a626cf541ff2397edc61ec42b7e49c68322daf9eb17fe503523\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b04dfbda4360fd5f44a2715b1ba7d5a4f520fd1ee2cccc2b80e1d5a280e2199f\",\"dweb:/ipfs/QmPKuZYe7bZLcqzLkqQkxV4f1bbJ5HDmTNgDVwboHqRsML\"]},\"project:/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x0d4de01fe5360c38b4ad2b0822a12722958428f5138a7ff47c1720eb6fa52bba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://77724cecdfba8814632ab58737c2b0f2d4ad2d532bc614aee559b5593c1152f0\",\"dweb:/ipfs/QmUcE6gXyv7CQh4sUdcDABYKGTovTe1zLMZSEq95nkc3ph\"]},\"project:/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708\",\"dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV\"]},\"project:/contracts/token/ERC721/extensions/ERC721Royalty.sol\":{\"keccak256\":\"0x7cdc887a364b6e3f9669bb4b16582e135121437399ac69d41db15012e09b96cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce1c4fcd6eafe8f6b8daf541a2cccfcd44368aa0a697c567a5b875edc8c43fea\",\"dweb:/ipfs/QmcN4HhvYveWTtcGfUY3vnzSbJyAtmgvprUW58rDLY7Vdf\"]},\"project:/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x75b829ff2f26c14355d1cba20e16fe7b29ca58eb5fef665ede48bc0f9c6c74b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a0a107160525724f9e1bbbab031defc2f298296dd9e331f16a6f7130cec32146\",\"dweb:/ipfs/QmemujxSd7gX8A9M8UwmNbz4Ms3U9FG9QfudUgxwvTmPWf\"]},\"project:/contracts/token/common/ERC2981.sol\":{\"keccak256\":\"0x0b5e250608cdc7f9fd3a5fa14fe99e43244ed31d845d5bc7143dc25406821d71\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://709d7105d4494e2596e9e453ebcf998831c9687273737f2cbb78c3c0c78e9f1d\",\"dweb:/ipfs/QmSRS649drf5kaq5wbzEuHGuwnR1oSX1VSbScvLF7aB3C4\"]},\"project:/contracts/utils/Address.sol\":{\"keccak256\":\"0x2ccf9d2313a313d41a791505f2b5abfdc62191b5d4334f7f7a82691c088a1c87\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b3a57d0854b2fdce6ebff933a48dca2445643d1eccfc27f00292e937f26c6a58\",\"dweb:/ipfs/QmW45rZooS9TqR4YXUbjRbtf2Bpb5ouSarBvfW1LdGprvV\"]},\"project:/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"project:/contracts/utils/Strings.sol\":{\"keccak256\":\"0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30\",\"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2\"]},\"project:/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d\",\"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43\"]},\"project:/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_salePrice\",\"type\":\"uint256\"}],\"name\":\"royaltyInfo\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment information. Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first. IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to voluntarily pay royalties together with sales, but note that this standard is not yet widely supported. _Available since v4.5._\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"See {IERC721-approve}.\"},\"balanceOf(address)\":{\"details\":\"See {IERC721-balanceOf}.\"},\"getApproved(uint256)\":{\"details\":\"See {IERC721-getApproved}.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IERC721-isApprovedForAll}.\"},\"name()\":{\"details\":\"See {IERC721Metadata-name}.\"},\"ownerOf(uint256)\":{\"details\":\"See {IERC721-ownerOf}.\"},\"royaltyInfo(uint256,uint256)\":{\"details\":\"Returns how much royalty is owed and to whom, based on a sale price that may be denominated in any unit of exchange. The royalty amount is denominated and should be paid in that same unit of exchange.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IERC721-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"symbol()\":{\"details\":\"See {IERC721Metadata-symbol}.\"},\"tokenURI(uint256)\":{\"details\":\"See {IERC721Metadata-tokenURI}.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-transferFrom}.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/ERC721/extensions/ERC721Royalty.sol\":\"ERC721Royalty\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IERC2981.sol\":{\"keccak256\":\"0x20550cb0bc3ea5824e56c00f16bb7bad92f47dda624b857471b8b8d840358712\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59c3da3189b45830a334467f155a93c94617721475abf810ea9f4251af9494ec\",\"dweb:/ipfs/QmWMNXfkv1HQmbURTkHv73mfoRAZDMoJJ2EJWy9AXGG3Fu\"]},\"project:/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xc8781227b53dc710fe553939c39ea9bf56fa34bbbea9bdc9e304c5e379d68c60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://06593b39956b009173a740409065543cb13a2f5a9ea0d93a6284ecca25f340a0\",\"dweb:/ipfs/QmatidRGVdwwUajghNkkbVhH2FbedMZbuPPYnBNK2fEd5f\"]},\"project:/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x20746b79ce9be1524eac3259b84e8c3d87ede2e3970c49c264f0911a5ab8c7f9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ea8e549a5ed893995496f8f3133021d5aa29e79cce33ad3144786ecf865abd7\",\"dweb:/ipfs/QmbmEeyNqupmYYjoZd7xHKhBUFgEzqQ4mCJ7b3ogZ5AoHX\"]},\"project:/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xc97c28f24caed758d150587f1e57753705c2439f314ac47947739869c4413819\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b2319c1a8e34937da319c0a443a3fa9567994a9fc327be7186c7738573bcfa2f\",\"dweb:/ipfs/QmTSesyJCFLrjSJm5FoVLR1kXM26CnxVy1Ti9HHx31ZyJ2\"]},\"project:/contracts/token/ERC721/extensions/ERC721Royalty.sol\":{\"keccak256\":\"0x5806108fb657310fe35a7636a3ccaad647cd206c10cdd52cc834fb322bbfe54c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://22d352509d1630a9baba83620466982d5a096f921ad05acf0e6ac1d67a639728\",\"dweb:/ipfs/QmasBEHFh2rYgSEnVvsNV3MJ9s1svhuJp1LVHqa1stPo64\"]},\"project:/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x23018238ee951d13a9d7f7d2cd641065752923c0aeede09a58a7f1fabf891d75\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://83a5286e82596aa938b6e38803360ca935b9727dc98f317b318a559ae9f438a5\",\"dweb:/ipfs/QmaBhNbpWZ6JPrfhuqX54DAtZj35yX278vArsNr5WtdXoZ\"]},\"project:/contracts/token/common/ERC2981.sol\":{\"keccak256\":\"0x1f41c8a1fdc69836a3d36d4ba684d1c6ea44206427da8a65b61fb6a5b0efba23\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a6c38c5d8a6526d8755fda720245c2c7127fff62f404a48cc6be021278c95eed\",\"dweb:/ipfs/QmTjKcrMEiKp8Jh3B68RS7KSH2PQra9WNuqcgMvm5fsyjw\"]},\"project:/contracts/utils/Address.sol\":{\"keccak256\":\"0x3b74e064b6da34a7f0fb2118e56ce114bb40cb9658c6899c82e9b82e9051315e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7a1f21cffab948ce9c49bfe9e017e00d77bd3c72e092b5169d3c2df5e33dc19\",\"dweb:/ipfs/QmRxYsuC1YzFZ76fsADhMwQdGdN9BGHZnws3PcboiDuEXT\"]},\"project:/contracts/utils/Context.sol\":{\"keccak256\":\"0x81d5fc973a522c8909d60be6a201869d46aa47b030b8813f60616404628c2b94\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9755b505799e622d964a843a8ed1fd60fedffca230178e5cb95ae9280df4dcd2\",\"dweb:/ipfs/QmRkhUYUUgRZ2QYJjmtQct2ubyYwS3bdUMhbuFYM12VfYn\"]},\"project:/contracts/utils/Strings.sol\":{\"keccak256\":\"0x43bd1a72719f3bea01b14183c87341cc9247e9f885071a0f9792e9e50bcd1d7c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://09ed1d435bacc5c8162fecf8793613a10db9e8e680b002e276b00c74f86d10a9\",\"dweb:/ipfs/QmXBVDNQNpkmoW8RPxZ7nSNQNcxFb2bqtVFDe2mE53RKRb\"]},\"project:/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x3d3fe7b1901114d50828f5c77ba7f09a2a6a65223620c837364d31b60e5982ac\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6751cee12592cb9c33be618057660d6c84cb0594bd0afa552009438e38d3dd02\",\"dweb:/ipfs/QmWq8SxNw4q6n1B8i9sFZVaodB6wrcyBPsKPWMsaUyCECH\"]},\"project:/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x540685d7ece3faa56f38253270ff11b18e63949fb8659c408123b1874674492e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5474839e19e2571c52eae3aab1dc6e6edf2b20bbba9895f59db6594a2678a3d5\",\"dweb:/ipfs/QmVHocBeANMkq4TzVM7q9At5NSg1TEpT9D9vgJ5dGcvcPN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -369,54 +369,54 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC721/extensions/ERC721Royalty.sol)\n\npragma solidity ^0.8.0;\n\nimport \"../ERC721.sol\";\nimport \"../../common/ERC2981.sol\";\nimport \"../../../utils/introspection/ERC165.sol\";\n\n/**\n * @dev Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment\n * information.\n *\n * Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for\n * specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first.\n *\n * IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See\n * https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to\n * voluntarily pay royalties together with sales, but note that this standard is not yet widely supported.\n *\n * _Available since v4.5._\n */\nabstract contract ERC721Royalty is ERC2981, ERC721 {\n    /**\n     * @dev See {IERC165-supportsInterface}.\n     */\n    function supportsInterface(bytes4 interfaceId) public view virtual override(ERC721, ERC2981) returns (bool) {\n        return super.supportsInterface(interfaceId);\n    }\n\n    /**\n     * @dev See {ERC721-_burn}. This override additionally clears the royalty information for the token.\n     */\n    function _burn(uint256 tokenId) internal virtual override {\n        super._burn(tokenId);\n        _resetTokenRoyalty(tokenId);\n    }\n}\n",
-  "sourcePath": "/Users/vivekreddy/Documents/Spring2022/Blockchain/Code/BI_Final/BI-contract/contracts/token/ERC721/extensions/ERC721Royalty.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC721/extensions/ERC721Royalty.sol)\r\n\r\npragma solidity ^0.8.0;\r\n\r\nimport \"../ERC721.sol\";\r\nimport \"../../common/ERC2981.sol\";\r\nimport \"../../../utils/introspection/ERC165.sol\";\r\n\r\n/**\r\n * @dev Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment\r\n * information.\r\n *\r\n * Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for\r\n * specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first.\r\n *\r\n * IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See\r\n * https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to\r\n * voluntarily pay royalties together with sales, but note that this standard is not yet widely supported.\r\n *\r\n * _Available since v4.5._\r\n */\r\nabstract contract ERC721Royalty is ERC2981, ERC721 {\r\n    /**\r\n     * @dev See {IERC165-supportsInterface}.\r\n     */\r\n    function supportsInterface(bytes4 interfaceId) public view virtual override(ERC721, ERC2981) returns (bool) {\r\n        return super.supportsInterface(interfaceId);\r\n    }\r\n\r\n    /**\r\n     * @dev See {ERC721-_burn}. This override additionally clears the royalty information for the token.\r\n     */\r\n    function _burn(uint256 tokenId) internal virtual override {\r\n        super._burn(tokenId);\r\n        _resetTokenRoyalty(tokenId);\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Kshitij\\UBSem2\\CSE 526 - Blockchain\\Project\\Phase3\\MarketPlaceBlockchain\\BI-contract\\contracts\\token\\ERC721\\extensions\\ERC721Royalty.sol",
   "ast": {
     "absolutePath": "project:/contracts/token/ERC721/extensions/ERC721Royalty.sol",
     "exportedSymbols": {
       "Address": [
-        18505
+        18534
       ],
       "Context": [
-        18893
+        18922
       ],
       "ERC165": [
-        20678
+        20707
       ],
       "ERC2981": [
-        18210
+        18239
       ],
       "ERC721": [
-        15647
+        15676
       ],
       "ERC721Royalty": [
-        16232
+        16261
       ],
       "IERC165": [
-        21002
+        21031
       ],
       "IERC2981": [
-        8351
+        8380
       ],
       "IERC721": [
-        15763
+        15792
       ],
       "IERC721Metadata": [
-        16418
+        16447
       ],
       "IERC721Receiver": [
-        15781
+        15810
       ],
       "Strings": [
-        19396
+        19425
       ]
     },
-    "id": 16233,
+    "id": 16262,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 16188,
+        "id": 16217,
         "literals": [
           "solidity",
           "^",
@@ -424,41 +424,41 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "125:23:112"
+        "src": "128:23:113"
       },
       {
         "absolutePath": "project:/contracts/token/ERC721/ERC721.sol",
         "file": "../ERC721.sol",
-        "id": 16189,
+        "id": 16218,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 16233,
-        "sourceUnit": 15648,
-        "src": "150:23:112",
+        "scope": 16262,
+        "sourceUnit": 15677,
+        "src": "155:23:113",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/contracts/token/common/ERC2981.sol",
         "file": "../../common/ERC2981.sol",
-        "id": 16190,
+        "id": 16219,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 16233,
-        "sourceUnit": 18211,
-        "src": "174:34:112",
+        "scope": 16262,
+        "sourceUnit": 18240,
+        "src": "180:34:113",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/contracts/utils/introspection/ERC165.sol",
         "file": "../../../utils/introspection/ERC165.sol",
-        "id": 16191,
+        "id": 16220,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 16233,
-        "sourceUnit": 20679,
-        "src": "209:49:112",
+        "scope": 16262,
+        "sourceUnit": 20708,
+        "src": "216:49:113",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -467,74 +467,74 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 16193,
+              "id": 16222,
               "name": "ERC2981",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 18210,
-              "src": "1016:7:112"
+              "referencedDeclaration": 18239,
+              "src": "1038:7:113"
             },
-            "id": 16194,
+            "id": 16223,
             "nodeType": "InheritanceSpecifier",
-            "src": "1016:7:112"
+            "src": "1038:7:113"
           },
           {
             "baseName": {
-              "id": 16195,
+              "id": 16224,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 15647,
-              "src": "1025:6:112"
+              "referencedDeclaration": 15676,
+              "src": "1047:6:113"
             },
-            "id": 16196,
+            "id": 16225,
             "nodeType": "InheritanceSpecifier",
-            "src": "1025:6:112"
+            "src": "1047:6:113"
           }
         ],
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 16192,
+          "id": 16221,
           "nodeType": "StructuredDocumentation",
-          "src": "260:720:112",
+          "src": "269:732:113",
           "text": " @dev Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment\n information.\n Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for\n specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first.\n IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See\n https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to\n voluntarily pay royalties together with sales, but note that this standard is not yet widely supported.\n _Available since v4.5._"
         },
         "fullyImplemented": false,
-        "id": 16232,
+        "id": 16261,
         "linearizedBaseContracts": [
-          16232,
-          15647,
-          16418,
-          15763,
-          18210,
-          20678,
-          8351,
-          21002,
-          18893
+          16261,
+          15676,
+          16447,
+          15792,
+          18239,
+          20707,
+          8380,
+          21031,
+          18922
         ],
         "name": "ERC721Royalty",
-        "nameLocation": "999:13:112",
+        "nameLocation": "1021:13:113",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              14875,
-              18058
+              14904,
+              18087
             ],
             "body": {
-              "id": 16212,
+              "id": 16241,
               "nodeType": "Block",
-              "src": "1207:60:112",
+              "src": "1233:62:113",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 16209,
+                        "id": 16238,
                         "name": "interfaceId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16199,
-                        "src": "1248:11:112",
+                        "referencedDeclaration": 16228,
+                        "src": "1275:11:113",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
@@ -549,32 +549,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 16207,
+                        "id": 16236,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
-                        "src": "1224:5:112",
+                        "src": "1251:5:113",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_super$_ERC721Royalty_$16232_$",
+                          "typeIdentifier": "t_type$_t_super$_ERC721Royalty_$16261_$",
                           "typeString": "type(contract super ERC721Royalty)"
                         }
                       },
-                      "id": 16208,
+                      "id": 16237,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "supportsInterface",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 14875,
-                      "src": "1224:23:112",
+                      "referencedDeclaration": 14904,
+                      "src": "1251:23:113",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_bytes4_$returns$_t_bool_$",
                         "typeString": "function (bytes4) view returns (bool)"
                       }
                     },
-                    "id": 16210,
+                    "id": 16239,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -582,68 +582,68 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1224:36:112",
+                    "src": "1251:36:113",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 16206,
-                  "id": 16211,
+                  "functionReturnParameters": 16235,
+                  "id": 16240,
                   "nodeType": "Return",
-                  "src": "1217:43:112"
+                  "src": "1244:43:113"
                 }
               ]
             },
             "documentation": {
-              "id": 16197,
+              "id": 16226,
               "nodeType": "StructuredDocumentation",
-              "src": "1038:56:112",
+              "src": "1061:58:113",
               "text": " @dev See {IERC165-supportsInterface}."
             },
             "functionSelector": "01ffc9a7",
-            "id": 16213,
+            "id": 16242,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "supportsInterface",
-            "nameLocation": "1108:17:112",
+            "nameLocation": "1134:17:113",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 16203,
+              "id": 16232,
               "nodeType": "OverrideSpecifier",
               "overrides": [
                 {
-                  "id": 16201,
+                  "id": 16230,
                   "name": "ERC721",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 15647,
-                  "src": "1175:6:112"
+                  "referencedDeclaration": 15676,
+                  "src": "1201:6:113"
                 },
                 {
-                  "id": 16202,
+                  "id": 16231,
                   "name": "ERC2981",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 18210,
-                  "src": "1183:7:112"
+                  "referencedDeclaration": 18239,
+                  "src": "1209:7:113"
                 }
               ],
-              "src": "1166:25:112"
+              "src": "1192:25:113"
             },
             "parameters": {
-              "id": 16200,
+              "id": 16229,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 16199,
+                  "id": 16228,
                   "mutability": "mutable",
                   "name": "interfaceId",
-                  "nameLocation": "1133:11:112",
+                  "nameLocation": "1159:11:113",
                   "nodeType": "VariableDeclaration",
-                  "scope": 16213,
-                  "src": "1126:18:112",
+                  "scope": 16242,
+                  "src": "1152:18:113",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -651,10 +651,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 16198,
+                    "id": 16227,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1126:6:112",
+                    "src": "1152:6:113",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -663,21 +663,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1125:20:112"
+              "src": "1151:20:113"
             },
             "returnParameters": {
-              "id": 16206,
+              "id": 16235,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 16205,
+                  "id": 16234,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 16213,
-                  "src": "1201:4:112",
+                  "scope": 16242,
+                  "src": "1227:4:113",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -685,10 +685,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 16204,
+                    "id": 16233,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1201:4:112",
+                    "src": "1227:4:113",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -697,33 +697,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1200:6:112"
+              "src": "1226:6:113"
             },
-            "scope": 16232,
-            "src": "1099:168:112",
+            "scope": 16261,
+            "src": "1125:170:113",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           },
           {
             "baseFunctions": [
-              15431
+              15460
             ],
             "body": {
-              "id": 16230,
+              "id": 16259,
               "nodeType": "Block",
-              "src": "1452:74:112",
+              "src": "1485:77:113",
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 16223,
+                        "id": 16252,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16216,
-                        "src": "1474:7:112",
+                        "referencedDeclaration": 16245,
+                        "src": "1508:7:113",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -738,32 +738,32 @@
                         }
                       ],
                       "expression": {
-                        "id": 16220,
+                        "id": 16249,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
-                        "src": "1462:5:112",
+                        "src": "1496:5:113",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_super$_ERC721Royalty_$16232_$",
+                          "typeIdentifier": "t_type$_t_super$_ERC721Royalty_$16261_$",
                           "typeString": "type(contract super ERC721Royalty)"
                         }
                       },
-                      "id": 16222,
+                      "id": 16251,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_burn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 15431,
-                      "src": "1462:11:112",
+                      "referencedDeclaration": 15460,
+                      "src": "1496:11:113",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 16224,
+                    "id": 16253,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -771,27 +771,27 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1462:20:112",
+                    "src": "1496:20:113",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 16225,
+                  "id": 16254,
                   "nodeType": "ExpressionStatement",
-                  "src": "1462:20:112"
+                  "src": "1496:20:113"
                 },
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 16227,
+                        "id": 16256,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 16216,
-                        "src": "1511:7:112",
+                        "referencedDeclaration": 16245,
+                        "src": "1546:7:113",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -805,18 +805,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 16226,
+                      "id": 16255,
                       "name": "_resetTokenRoyalty",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 18209,
-                      "src": "1492:18:112",
+                      "referencedDeclaration": 18238,
+                      "src": "1527:18:113",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 16228,
+                    "id": 16257,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -824,51 +824,51 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1492:27:112",
+                    "src": "1527:27:113",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 16229,
+                  "id": 16258,
                   "nodeType": "ExpressionStatement",
-                  "src": "1492:27:112"
+                  "src": "1527:27:113"
                 }
               ]
             },
             "documentation": {
-              "id": 16214,
+              "id": 16243,
               "nodeType": "StructuredDocumentation",
-              "src": "1273:116:112",
+              "src": "1303:118:113",
               "text": " @dev See {ERC721-_burn}. This override additionally clears the royalty information for the token."
             },
-            "id": 16231,
+            "id": 16260,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_burn",
-            "nameLocation": "1403:5:112",
+            "nameLocation": "1436:5:113",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 16218,
+              "id": 16247,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
-              "src": "1443:8:112"
+              "src": "1476:8:113"
             },
             "parameters": {
-              "id": 16217,
+              "id": 16246,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 16216,
+                  "id": 16245,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "1417:7:112",
+                  "nameLocation": "1450:7:113",
                   "nodeType": "VariableDeclaration",
-                  "scope": 16231,
-                  "src": "1409:15:112",
+                  "scope": 16260,
+                  "src": "1442:15:113",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -876,10 +876,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 16215,
+                    "id": 16244,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1409:7:112",
+                    "src": "1442:7:113",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -888,27 +888,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1408:17:112"
+              "src": "1441:17:113"
             },
             "returnParameters": {
-              "id": 16219,
+              "id": 16248,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1452:0:112"
+              "src": "1485:0:113"
             },
-            "scope": 16232,
-            "src": "1394:132:112",
+            "scope": 16261,
+            "src": "1427:135:113",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "internal"
           }
         ],
-        "scope": 16233,
-        "src": "981:547:112",
+        "scope": 16262,
+        "src": "1003:562:113",
         "usedErrors": []
       }
     ],
-    "src": "125:1404:112"
+    "src": "128:1439:113"
   },
   "compiler": {
     "name": "solc",
@@ -916,7 +916,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-05T20:32:07.708Z",
+  "updatedAt": "2022-05-08T19:09:20.822Z",
   "devdoc": {
     "details": "Extension of ERC721 with the ERC2981 NFT Royalty Standard, a standardized way to retrieve royalty payment information. Royalty information can be specified globally for all token ids via {_setDefaultRoyalty}, and/or individually for specific token ids via {_setTokenRoyalty}. The latter takes precedence over the first. IMPORTANT: ERC-2981 only specifies a way to signal royalty information and does not enforce its payment. See https://eips.ethereum.org/EIPS/eip-2981#optional-royalty-payments[Rationale] in the EIP. Marketplaces are expected to voluntarily pay royalties together with sales, but note that this standard is not yet widely supported. _Available since v4.5._",
     "kind": "dev",

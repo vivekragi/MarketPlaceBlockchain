@@ -1,6 +1,6 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider")
 
-const memonic = "version bicycle magic destroy food around lumber holiday fortune turn cupboard cupboard"
+const memonic = "fit chunk april coin subject pear treat dolphin love travel half trap"
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
@@ -9,7 +9,7 @@ module.exports = {
   ropsten: {
 
     provider: () => 
-      new HDWalletProvider(memonic,  "wss://ropsten.infura.io/ws/v3/4bada20039124991ab4068b3cbfef7b5"),
+      new HDWalletProvider(memonic,  "wss://ropsten.infura.io/ws/v3/60b985e720394a1fab9fa51185c775e6"),
     
     network_id: 3,
     gas: 8000000,
