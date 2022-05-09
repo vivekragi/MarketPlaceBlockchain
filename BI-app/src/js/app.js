@@ -76,7 +76,7 @@ App = {
 		App.handleRegisterSeller(amt);
 	  });
 
-	  $(document).on('click', '#buyerbalance', function(){
+	  $(document).on('click', '#balance', function(){
 		var bal = jQuery('#bal').val()
 		console.log(bal)
 		App.handleBuyerBalance(bal);
@@ -88,6 +88,10 @@ App = {
 
 	  $(document).on('click', '#totalItems', function(){
 		App.handleTotalItems();
+	  });
+	  $(document).on('click', '#unregister', function(){
+		  var acc = jQuery('#addr').val()
+		App.handleUnRegister(acc);
 	  });
 	  $(document).on('click', '#transferredproducts', function(){
 		App.handleTransferredProducts();
@@ -158,6 +162,24 @@ App = {
 });
 
   },
+  handleUnRegister:function(acc){
+	var registerInstance;
+    web3.eth.getAccounts(function(error, accounts) {
+    var account = accounts[0];
+
+    App.contracts.BI.deployed().then(function(instance) {
+	registerInstance = instance;
+	registerInstance.unregister(acc, {from: account}).then((result)=>{
+		if(result){
+            if(result.receipt.status == true){
+            	alert("Unregistered user successfully")
+			}
+        }  
+	})
+});
+});
+
+  },
   handleProducts:function(){
 
 
@@ -193,7 +215,11 @@ App = {
 					jQuery("#getproducts").append(data)	
 				}
 			} 
-			
+			const a = document.createElement('button')
+				a.innerHTML = "Buy"
+				jQuery("#getproducts").append(a)
+				a.addEventListener("click", App.handlebuy.bind(this, result[i]['prodID'], result[i]['owner'], result[i]['price']))
+				a.classList.add('btn', 'btn-primary', 'button-test')
 			// jQuery('#getproducts').append("Product Id: ", result[i].prodID.toString())
 			// jQuery('#getproducts').append("<br></br>")
 			// jQuery('#getproducts').append("Product owners ", result[i].owners.toString())
@@ -244,9 +270,9 @@ App = {
 	var account = accounts[0];
 	App.contracts.BI.deployed().then(function(instance) {
 	registerInstance = instance;
-
+	jQuery('#getbuyerbalance').empty()
 	return registerInstance.checkBalance(bal, {from: account}).then((result)=>{
-		jQuery('#getbuyerbalance').empty().append("<i > Buyer Balance : </i>" , result.toString());
+		jQuery('#getbuyerbalance').append("<i > Balance : </i>" , result.toString());
 		
 	})
 
